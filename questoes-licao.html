@@ -4,14 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Caminho - Início</title>
-    
+    <meta name="theme-color" id="theme-color-meta" content="#0056b3">
+    <title>Caminho - Questões</title>
+
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="./assets/styles/tailwind.config.js"></script>
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet">
+
     <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
@@ -49,10 +51,21 @@
         }
 
         /* Dynamic Font Sizes */
-        .font-size-pequeno { font-size: 14px; }
-        .font-size-medio { font-size: 18px; }
-        .font-size-grande { font-size: 22px; }
-        .font-size-extra { font-size: 26px; }
+        .font-size-pequeno {
+            font-size: 14px;
+        }
+
+        .font-size-medio {
+            font-size: 18px;
+        }
+
+        .font-size-grande {
+            font-size: 22px;
+        }
+
+        .font-size-extra {
+            font-size: 26px;
+        }
 
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
@@ -212,6 +225,7 @@
     <script src="./assets/js/dados.js"></script>
 
     <script>
+        
         // CAPTURA INTELIGENTE: Puxa o livro e a lição exata gravados no navegador pelas telas anteriores
         const livroAtual = localStorage.getItem('livro_selecionado') || "tiago";
         const licaoAtual = localStorage.getItem('licao_selecionada') || "licao_2";
@@ -290,6 +304,29 @@
             const containerPerguntas = document.getElementById('container-lista-perguntas');
             containerPerguntas.innerHTML = '';
 
+            if (diaAtivo === 6) {
+                // 1. Renderiza Devocionais do Dia 6
+                if (dadosDia.devocionais) {
+                    Object.entries(dadosDia.devocionais).forEach(([titulo, texto]) => {
+                        containerPerguntas.innerHTML += `
+            <div class="p-6 bg-surface-container-lowest rounded-xl border border-outline-variant">
+                <h3 class="font-bold text-lg mb-2 text-primary-container uppercase tracking-wide">${titulo.replace(/_/g, ' ')}</h3>
+                <p class="leading-relaxed">${texto}</p>
+            </div>`;
+                    });
+                }
+                // 2. Renderiza Comentários do Dia 6
+                if (dadosDia.comentario_integral) {
+                    Object.entries(dadosDia.comentario_integral).forEach(([titulo, texto]) => {
+                        containerPerguntas.innerHTML += `
+            <div class="p-6 bg-white rounded-xl border border-outline-variant shadow-sm">
+                <h3 class="font-bold text-lg mb-2 text-primary uppercase tracking-wide">${titulo.replace(/_/g, ' ')}</h3>
+                <p class="leading-relaxed">${texto}</p>
+            </div>`;
+                    });
+                }
+            }
+
             if (dadosDia.perguntas.length === 0) {
                 const cardAviso = document.createElement('div');
                 cardAviso.className = "p-8 bg-surface-container-low rounded-xl text-center border border-outline-variant/50 w-full";
@@ -300,8 +337,15 @@
                 `;
                 containerPerguntas.appendChild(cardAviso);
             } else {
+                let questaoOffset = 0;
+                for (let i = 1; i < diaAtivo; i++) {
+                    const prevDia = licao.dias[`dia_${i}`];
+                    if (prevDia && prevDia.perguntas) {
+                        questaoOffset += prevDia.perguntas.length;
+                    }
+                }
                 dadosDia.perguntas.forEach((perguntaTexto, index) => {
-                    const numeroQuestao = index + 1;
+                    const numeroQuestao = questaoOffset + index + 1;
                     const chaveStorage = `${livroAtual}_${licaoAtual}_dia_${diaAtivo}_q${numeroQuestao}`;
 
                     const cardQuestao = document.createElement('div');

@@ -1,321 +1,19 @@
-<!-- <!DOCTYPE html>
-<html class="light" lang="pt-br">
-
-<head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Caminho - Início</title>
-    
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script src="./assets/styles/tailwind.config.js"></script>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-    
-    <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
-            vertical-align: middle;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f2f2f7;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        .touch-target {
-            min-height: 56px;
-        }
-
-        .bottom-sheet {
-            transform: translateY(100%);
-            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .bottom-sheet.open {
-            transform: translateY(0);
-        }
-
-        .modal-overlay {
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.3s ease;
-        }
-
-        .modal-overlay.open {
-            opacity: 1;
-            pointer-events: auto;
-        }
-
-        /* Dynamic Font Sizes */
-        .font-size-pequeno { font-size: 14px; }
-        .font-size-medio { font-size: 18px; }
-        .font-size-grande { font-size: 22px; }
-        .font-size-extra { font-size: 26px; }
-    </style>
-</head>
-
-<body class="bg-background text-on-surface">
-    <header
-        class="fixed top-0 left-0 w-full z-50 bg-surface border-b border-outline-variant flex justify-between items-center px-margin-mobile h-touch-target-min">
-        <div class="flex items-center gap-4">
-            <h1 class="font-headline-md text-headline-md font-bold text-primary">Caminho</h1>
-        </div>
-        <div class="flex items-center"></div>
-    </header>
-
-    <main class="max-w-[1100px] mx-auto px-margin-mobile pt-24 pb-32" id="main-content">
-        <section class="mb-6">
-            <h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2">Estudos Bíblicos em
-                Comunidade</h1>
-            <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">Mergulhe nas Escrituras e fortaleça sua fé
-            </p>
-            <button
-                class="w-full flex items-center justify-center gap-2 bg-surface-container-low border border-outline-variant rounded-[12px] h-touch-target-min font-label-lg text-label-lg text-on-surface active:bg-surface-container-high transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
-                onclick="openFontModal()" aria-label="Ajustar configurações de acessibilidade">
-                <span class="material-symbols-outlined">format_size</span>
-                AA Ajustar Tamanho da Letra
-            </button>
-        </section>
-
-        <section class="mb-12">
-            <div
-                class="bg-surface-container-lowest border border-outline-variant rounded-xl p-8 shadow-lg transition-transform duration-300 hover:shadow-xl">
-                <div class="flex items-center gap-2 mb-4">
-                    <span class="material-symbols-outlined text-primary-container"
-                        style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
-                    <h2 class="font-headline-md text-headline-md text-primary-container">Palavra de Vida:</h2>
-                </div>
-
-                <blockquote
-                    class="font-body-lg text-body-lg text-on-surface leading-relaxed italic mb-4 dynamic-text font-size-extra [&_a]:hidden [&_.bibleChapter]:hidden">
-                    <div id="dailyVersesWrapper"></div>
-                    <script async defer src="https://dailyverses.net/get/random.js?language=nvi-pt"></script>
-                </blockquote>
-
-                <cite id="versiculoReferencia"
-                    class="font-label-lg text-label-lg text-on-surface-variant block text-right">— Buscando...</cite>
-            </div>
-        </section>
-
-        <script>
-            const monitorarVersiculo = setInterval(() => {
-                const wrapper = document.getElementById('dailyVersesWrapper');
-                // Captura o link ou a classe da referência que o widget gerou
-                const refLink = wrapper ? (wrapper.querySelector('a') || wrapper.querySelector('.bibleChapter')) : null;
-
-                if (refLink && refLink.innerText.trim() !== "") {
-                    // Atualiza o seu <cite> customizado com o nome do livro dinâmico
-                    document.getElementById('versiculoReferencia').innerText = "— " + refLink.innerText;
-                    clearInterval(monitorarVersiculo); // Para de rodar o script
-                }
-            }, 100); // Checa a cada 100 milissegundos se o script já carregou
-        </script>
-
-        <div class="mb-12 rounded-xl overflow-hidden aspect-[16/9] md:aspect-[21/9]">
-            <img alt="Bíblia aberta sob a luz do sol" class="w-full h-full object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhBXM7wvQ68PKxf4p2Jb0tynn9Q0MozOjbvIFEteHwN_ZRUJ2yczHn7htfi1zj3aom0DwfbpLx9jckbvISfmX19hDJxvAttkuG_MYdTKq2Y5JSLgYPrLGMcvBQg0yyepAiHy4g4hdU2QOMsZOrpw9ZYx98ZY6u9CKgMMBeyVZUUpEPpC8QDClRFaedwWFM88xVlTjdUlDpb1Oy9x3uipDHlw182jjIaeEVaWzrMcOinViNSgjJvIt7SbxkAF95E0ZfFyXqxF3_KBM">
-        </div>
-
-        <section class="mb-12">
-            <h3 class="font-headline-md text-headline-md text-on-surface mb-6 px-1">Estudos Disponíveis</h3>
-            <div class="space-y-6" id="lista-estudos-dinamica">
-            </div>
-        </section>
-
-        <section class="flex justify-center mb-16">
-            <button
-                class="flex items-center gap-3 px-8 h-touch-target-min bg-secondary text-on-secondary rounded-full font-button-text text-button-text shadow-lg hover:bg-on-surface-variant transition-all active:scale-95 duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
-                onclick="toggleReminder()" aria-label="Ativar lembrete diário para leitura">
-                <span class="material-symbols-outlined" id="reminder-icon">notifications_active</span>
-                <span id="reminder-text">Ativar Lembrete Diário</span>
-            </button>
-        </section>
-    </main>
-
-    <div class="modal-overlay fixed inset-0 bg-black/40 z-[100]" id="modal-overlay" onclick="closeFontModal()"></div>
-
-    <div class="bottom-sheet fixed bottom-0 left-0 w-full bg-surface-container-lowest rounded-t-[28px] z-[101] shadow-2xl p-margin-mobile"
-        id="font-modal">
-        <div class="w-12 h-1 bg-outline-variant mx-auto rounded-full mb-6"></div>
-        <h2 class="font-headline-md text-headline-md text-on-surface text-center mb-8">Tamanho da Fonte</h2>
-        <div class="grid grid-cols-4 gap-2 mb-8">
-            <button
-                class="size-btn flex flex-col items-center justify-center py-4 px-2 border rounded-xl transition-all active:scale-95 border-outline-variant focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
-                id="btn-pequeno" onclick="setFontSize('pequeno')">
-                <span class="text-sm font-bold">A</span>
-                <span class="text-[10px] uppercase font-semibold mt-1">Pequeno</span>
-            </button>
-            <button
-                class="size-btn flex flex-col items-center justify-center py-4 px-2 border rounded-xl transition-all active:scale-95 border-outline-variant focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
-                id="btn-medio" onclick="setFontSize('medio')">
-                <span class="text-base font-bold">A</span>
-                <span class="text-[10px] uppercase font-semibold mt-1">Médio</span>
-            </button>
-            <button
-                class="size-btn flex flex-col items-center justify-center py-4 px-2 border rounded-xl transition-all active:scale-95 border-outline-variant focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
-                id="btn-grande" onclick="setFontSize('grande')">
-                <span class="text-xl font-bold">A</span>
-                <span class="text-[10px] uppercase font-semibold mt-1">Grande</span>
-            </button>
-            <button
-                class="size-btn flex flex-col items-center justify-center py-4 px-2 border rounded-xl transition-all active:scale-95 bg-primary text-on-primary border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
-                id="btn-extra" onclick="setFontSize('extra')">
-                <span class="text-2xl font-bold">A</span>
-                <span class="text-[10px] uppercase font-semibold mt-1">Extra</span>
-            </button>
-        </div>
-        <div class="bg-surface-container-low p-6 rounded-xl mb-8">
-            <p class="text-on-surface font-body-md transition-all duration-200 font-size-extra" id="preview-text">
-                <span class="font-bold">Título de Exemplo:</span> Assim ficará o texto do seu estudo bíblico para
-                leitura.
-            </p>
-        </div>
-        <button
-            class="w-full bg-primary-container text-on-primary-container h-touch-target-min rounded-full font-button-text text-button-text shadow-md active:scale-95 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
-            onclick="closeFontModal()">
-            Confirmar e Começar
-        </button>
-    </div>
-
-    <script src="./assets/js/dados.js"></script>
-    <script src="./assets/js/acessibilidade.js"></script>
-
-    <script>
-        const modal = document.getElementById('font-modal');
-        const overlay = document.getElementById('modal-overlay');
-        const previewText = document.getElementById('preview-text');
-        const dynamicTexts = document.querySelectorAll('.dynamic-text');
-
-        let currentSize = 'medio';
-
-        document.addEventListener("DOMContentLoaded", () => {
-            renderizarListaEstudosDoJson();
-        });
-
-        function renderizarListaEstudosDoJson() {
-            const containerEstudos = document.getElementById('lista-estudos-dinamica');
-            if (!containerEstudos) return;
-
-            containerEstudos.innerHTML = '';
-
-            Object.keys(estudos).forEach(chaveLivro => {
-                const infoLivro = estudos[chaveLivro];
-
-                if (!infoLivro.nome_livro) return;
-
-                const totalLicoes = Object.keys(infoLivro.licoes).length;
-                const nivelDificuldade = infoLivro.nivel || (chaveLivro === "tiago" ? 2 : 1);
-
-                let htmlPontosDificuldade = '<div class="flex gap-1 items-center">';
-                for (let i = 1; i <= 4; i++) {
-                    if (i <= nivelDificuldade) {
-                        htmlPontosDificuldade += `<div class="w-2.5 h-2.5 rounded-full bg-primary"></div>`;
-                    } else {
-                        htmlPontosDificuldade += `<div class="w-2.5 h-2.5 rounded-full bg-gray-200"></div>`;
-                    }
-                }
-                htmlPontosDificuldade += '</div>';
-
-                const cardBotao = document.createElement('button');
-                // CORREÇÃO DE RESPONSIVIDADE AQUI: mudamos de 'flex items-center' para 'flex items-start xs:items-center' e ajustamos o padding interno
-                cardBotao.className = "w-full text-left bg-white border border-outline-variant rounded-[24px] p-5 sm:p-6 shadow-sm flex items-start justify-between touch-target hover:bg-surface-container-low transition-all active:scale-95 duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 min-h-[112px]";
-
-                if (totalLicoes > 0) {
-                    cardBotao.onclick = () => {
-                        localStorage.setItem('livro_selecionado', chaveLivro);
-                        window.location.href = "selecao-licoes.html";
-                    };
-                } else {
-                    cardBotao.onclick = () => {
-                        alert(`O ${infoLivro.nome_livro.replace('Estudos Bíblicos em Comunidade - ', '')} está sendo estruturado e estará disponível em breve para o grupo!`);
-                    };
-                }
-
-                // ESTRUTURA FLUIDA: O container de informações agora usa flex-col nas telas pequenas e sm:flex-row em telas maiores
-                cardBotao.innerHTML = `
-                    <div class="flex items-start gap-4 sm:gap-6 w-full">
-                        <div class="bg-primary-fixed text-on-primary-fixed p-3 sm:p-4 rounded-xl flex-shrink-0 mt-1 sm:mt-0">
-                            <span class="material-symbols-outlined text-[24px] sm:text-[28px]">menu_book</span>
-                        </div>
-                        <div class="flex flex-col min-w-0 pr-2">
-                            <span class="font-headline-md text-headline-md text-on-surface font-bold dynamic-text font-size-extra leading-tight break-words">
-                                ${infoLivro.nome_livro.replace('Estudos Bíblicos em Comunidade - ', '')}
-                            </span>
-                            
-                            <div class="flex flex-wrap items-center gap-x-4 gap-y-1.5 mt-2 text-[#86868b]">
-                                <div class="flex items-center gap-1.5 flex-shrink-0">
-                                    <span class="material-symbols-outlined text-[18px]">list</span>
-                                    <span class="text-xs sm:text-label-lg font-medium">${totalLicoes} ${totalLicoes === 1 ? 'Lição' : 'Lições'}</span>
-                                </div>
-                                <div class="flex items-center gap-1.5 flex-shrink-0">
-                                    <span class="text-xs font-medium">Nível:</span>
-                                    ${htmlPontosDificuldade}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <span class="material-symbols-outlined text-outline text-[28px] sm:text-[32px] self-center flex-shrink-0 ml-auto">chevron_right</span>
-                `;
-
-                containerEstudos.appendChild(cardBotao);
-            });
-
-            // Força a aplicação do tamanho de fonte da acessibilidade assim que renderiza
-            if (typeof sincronizarTamanhoFonte === 'function') {
-                const tamanho = localStorage.getItem('caminho_tamanho_fonte') || 'medio';
-                sincronizarTamanhoFonte(tamanho);
-            }
-        }
-
-        // Funções do Modal de Acessibilidade
-        function openFontModal() {
-            modal.classList.add('open');
-            overlay.classList.add('open');
-            document.documentElement.style.overflow = 'hidden';
-        }
-
-        function closeFontModal() {
-            modal.classList.remove('open');
-            overlay.classList.remove('open');
-            document.documentElement.style.overflow = '';
-        }
-
-        function toggleReminder() {
-            const text = document.getElementById('reminder-text');
-            const icon = document.getElementById('reminder-icon');
-            const isActivated = text.innerText === 'Lembrete Ativado';
-
-            if (isActivated) {
-                text.innerText = 'Ativar Lembrete Diário';
-                icon.innerText = 'notifications_active';
-            } else {
-                text.innerText = 'Lembrete Ativado';
-                icon.innerText = 'notifications_off';
-            }
-        }
-    </script>
-</body>
-
-</html> -->
-
-
-
 <!DOCTYPE html>
 <html class="light" lang="pt-br">
 
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="theme-color" id="theme-color-meta" content="#0056b3">
     <title>Caminho - Início</title>
-    
+
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="./assets/styles/tailwind.config.js"></script>
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet">
+
     <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
@@ -353,10 +51,21 @@
         }
 
         /* Dynamic Font Sizes */
-        .font-size-pequeno { font-size: 14px; }
-        .font-size-medio { font-size: 18px; }
-        .font-size-grande { font-size: 22px; }
-        .font-size-extra { font-size: 26px; }
+        .font-size-pequeno {
+            font-size: 14px;
+        }
+
+        .font-size-medio {
+            font-size: 18px;
+        }
+
+        .font-size-grande {
+            font-size: 22px;
+        }
+
+        .font-size-extra {
+            font-size: 26px;
+        }
     </style>
 </head>
 
@@ -601,19 +310,106 @@
             document.documentElement.style.overflow = '';
         }
 
-        function toggleReminder() {
+        function atualizarStatusBotao() {
+            const text = document.getElementById('reminder-text');
+            const icon = document.getElementById('reminder-icon');
+            const btn = text.parentElement; // O botão pai
+
+            const permission = Notification.permission; // 'granted', 'denied' ou 'default'
+
+            if (permission === 'granted') {
+                text.innerText = 'Lembrete Ativado';
+                icon.innerText = 'notifications_active';
+                btn.classList.add('bg-primary', 'text-white'); // Estilo Ativo (ex: roxo/primário)
+                btn.classList.remove('bg-secondary', 'bg-red-500');
+            }
+            else if (permission === 'denied') {
+                text.innerText = 'Notificações Bloqueadas';
+                icon.innerText = 'notifications_off';
+                btn.classList.add('bg-red-500', 'text-white'); // Estilo Erro (vermelho)
+                btn.classList.remove('bg-secondary', 'bg-primary');
+            }
+            else {
+                text.innerText = 'Ativar Lembrete Diário';
+                icon.innerText = 'notifications';
+                btn.classList.add('bg-secondary'); // Estilo Padrão
+                btn.classList.remove('bg-primary', 'bg-red-500', 'text-white');
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            atualizarStatusBotao();
+        });
+
+        // Substitua sua função toggleReminder por esta versão integrada:
+        async function toggleReminder() {
             const text = document.getElementById('reminder-text');
             const icon = document.getElementById('reminder-icon');
             const isActivated = text.innerText === 'Lembrete Ativado';
 
-            if (isActivated) {
+            if (!isActivated) {
+                // 1. Solicita a permissão do navegador
+                const permission = await Notification.requestPermission();
+
+                if (permission === 'granted') {
+                    text.innerText = 'Lembrete Ativado';
+                    icon.innerText = 'notifications_off';
+                    localStorage.setItem('notificacoes_ativas', 'true'); // Flag de controle
+                } else {
+                    alert("Para receber lembretes, você precisa permitir notificações nas configurações do seu navegador.");
+                }
+            } else {
+                // 2. Desativa
                 text.innerText = 'Ativar Lembrete Diário';
                 icon.innerText = 'notifications_active';
-            } else {
-                text.innerText = 'Lembrete Ativado';
-                icon.innerText = 'notifications_off';
+                localStorage.setItem('notificacoes_ativas', 'false');
             }
         }
+
+        // Função para solicitar permissão de notificação (Chame esta função em um clique de botão)
+        function solicitarPermissaoNotificacao() {
+            if ("Notification" in window) {
+                Notification.requestPermission().then(permission => {
+                    if (permission === "granted") {
+                        console.log("Permissão concedida!");
+                    }
+                });
+            }
+        }
+
+        // Função que dispara a notificação
+        function dispararNotificacao(titulo, corpo) {
+            if (Notification.permission === "granted") {
+                new Notification(titulo, {
+                    body: corpo,
+                    icon: './assets/icons/favicon.png' // Ajuste o caminho do seu ícone se necessário
+                });
+            }
+        }
+
+        // Lógica de agendamento (checa a cada 60 segundos)
+        setInterval(() => {
+            const agora = new Date();
+            const hora = agora.getHours();
+            const minuto = agora.getMinutes();
+            const dataHoje = agora.toDateString();
+
+            // Chave para não repetir no mesmo dia
+            const controle = localStorage.getItem('notif_status');
+            const [lastDate, lastSlot] = controle ? controle.split('|') : [null, null];
+
+            // NOTIFICAÇÃO 09:00
+            if (hora === 9 && minuto === 0 && (lastDate !== dataHoje || lastSlot !== 'manha')) {
+                dispararNotificacao("Bom dia! 📖", "Já separou um tempinho para o estudo hoje?");
+                localStorage.setItem('notif_status', `${dataHoje}|manha`);
+            }
+
+            // NOTIFICAÇÃO 18:00
+            else if (hora === 18 && minuto === 0 && (lastDate !== dataHoje || lastSlot !== 'tarde')) {
+                dispararNotificacao("Estudo da noite 🌙", "Não esqueça de registrar suas lições hoje!");
+                localStorage.setItem('notif_status', `${dataHoje}|tarde`);
+            }
+        }, 60000);
     </script>
 </body>
 
