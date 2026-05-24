@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Caminho - Início</title>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="./assets/styles/tailwind.config.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+            vertical-align: middle;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f2f2f7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .touch-target {
+            min-height: 56px;
+        }
+
+        .bottom-sheet {
+            transform: translateY(100%);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .bottom-sheet.open {
+            transform: translateY(0);
+        }
+
+        .modal-overlay {
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-overlay.open {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        /* Dynamic Font Sizes */
+        .font-size-pequeno { font-size: 14px; }
+        .font-size-medio { font-size: 18px; }
+        .font-size-grande { font-size: 22px; }
+        .font-size-extra { font-size: 26px; }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .lesson-card:active {
+            transform: scale(0.98);
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<body class="flex flex-col min-h-screen font-body-md text-on-surface">
+    <!-- Top AppBar Component -->
+    <header
+        class="bg-surface sticky top-0 z-50 flex justify-between items-center w-full px-margin-mobile h-touch-target-min border-b border-outline-variant">
+        <button class="flex items-center gap-1 text-primary-container font-button-text active-scale"
+            onclick="window.history.back()">
+            <span class="material-symbols-outlined">arrow_back</span>
+            <span class="text-label-lg font-label-lg">Voltar</span>
+        </button>
+        <div class="w-10"></div> <!-- Spacer for symmetry -->
+    </header>
+    <main class="flex-1 w-full max-w-lg mx-auto px-margin-mobile pt-8 pb-40">
+        <!-- Main Header -->
+        <h1 class="font-headline-lg-mobile text-headline-lg-mobile text-[#000000] mb-8 leading-tight">
+            Tiago Lição 1: Fé e Ação
+        </h1>
+        <div class="space-y-8">
+            <!-- Card 1: Introduction -->
+            <section class="content-card bg-surface-container-lowest p-6 rounded-xl border border-outline-variant">
+                <h2 class="font-headline-md text-headline-md text-primary-container mb-4">
+                    Introdução ao Estudo
+                </h2>
+                <p class="font-body-lg text-body-lg italic text-on-surface leading-relaxed" id="dynamic-content-1">
+                    O livro de Tiago é um chamado prático para viver a fé em todas as áreas da vida.
+                </p>
+            </section>
+            <!-- Image Asset -->
+            <div class="rounded-xl overflow-hidden content-card h-48 w-full bg-surface-container">
+                <img class="w-full h-full object-cover"
+                    data-alt="A serene, high-contrast photograph of an open vintage book resting on a rustic wooden table. The scene is bathed in soft, natural morning light, creating a bright and modern light-mode atmosphere. The color palette focuses on warm wood tones and pristine white pages, reflecting a mood of quiet contemplation and spiritual focus suitable for a premium Bible study application."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4Q3BWLiO6gvMnVgSj8VTovgrFazdW0Ddg7nlv83JYu7yQdqw3btCgQL9lIvCx-OsmrUB5H_Uytudq_2lqwI2AGfwDSwBxrOYqi65KoK5GK6TleyoSIJ46UmPypOOeH_c9Oqo-gvB0wcnvT-XSMk9dyakooOWigqzj4u0rl6R2HlzDHfU6_fDKri5GzN1gCCSlPKaTWBRm90AxgFU6HQp38Zse6bGGpkNin_6Bu_5FlZY24Ce7k7QWKmzKutuCUcYxsQHMPf3dm2Y">
+            </div>
+            <!-- Card 2: Context -->
+            <section class="content-card bg-surface-container-lowest p-6 rounded-xl border border-outline-variant">
+                <h2 class="font-headline-md text-headline-md text-on-surface font-bold mb-4">
+                    Lição 1 - Introdução
+                </h2>
+                <div class="space-y-6 text-on-surface" id="dynamic-content-2">
+                    <p class="font-body-md text-body-md leading-loose">
+                        O livro de Tiago é um livro de ação. Ele contém apenas 108 versículos, e 60 deles trazem
+                        comandos de ação. Tiago acreditava fortemente que o que fazemos como seguidores de Cristo é tão
+                        importante quanto o que cremos sobre Ele.
+                    </p>
+                    <p class="font-body-md text-body-md leading-loose">
+                        Às vezes, as pessoas se perguntam se Tiago contradisse o apóstolo Paulo. Paulo deu uma forte
+                        mensagem de que somos salvos somente pela fé. Tiago disse que a fé sem obras está morta. Mas
+                        Tiago não estava dizendo que nossas boas obras são o que nos tornam justos diante de Deus. Tiago
+                        ensinou que nossas obras provam que somos salvos pela fé.
+                    </p>
+                </div>
+            </section>
+            <!-- Card 3: Practical Application -->
+            <section
+                class="content-card bg-surface-container-lowest p-6 rounded-xl border border-l-4 border-l-primary-container border-outline-variant">
+                <h2 class="font-headline-md text-headline-md text-on-primary-fixed-variant font-bold mb-4">
+                    Personalize a VERDADE!
+                </h2>
+                <p class="font-body-md text-body-md text-on-surface leading-loose" id="dynamic-content-3">
+                    O livro de Tiago provavelmente revelará algumas áreas onde seu comportamento não corresponde às suas
+                    crenças. Quando isso acontece, você pode ser tentado a questionar Deus ou ignorar os comandos que o
+                    deixam desconfortável. Ou, como Tiago sugeriu, você poderia optar por "aceitar humildemente a
+                    palavra implantada" (1:21).
+                </p>
+            </section>
+        </div>
+    </main>
+    
+    <script>
+        let currentFontSize = 18;
+
+        // Add a micro-interaction to cards on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-4');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.content-card').forEach(card => {
+            card.classList.add('transition-all', 'duration-700', 'ease-out', 'opacity-0', 'translate-y-4');
+            observer.observe(card);
+        });
+    </script>
+    <script src="./assets/js/acessibilidade.js"></script>
+</body>
+
+</html>

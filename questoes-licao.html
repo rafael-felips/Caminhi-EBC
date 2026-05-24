@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html class="light" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Caminho - Início</title>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="./assets/styles/tailwind.config.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+            vertical-align: middle;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f2f2f7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .touch-target {
+            min-height: 56px;
+        }
+
+        .bottom-sheet {
+            transform: translateY(100%);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .bottom-sheet.open {
+            transform: translateY(0);
+        }
+
+        .modal-overlay {
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-overlay.open {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        /* Dynamic Font Sizes */
+        .font-size-pequeno { font-size: 14px; }
+        .font-size-medio { font-size: 18px; }
+        .font-size-grande { font-size: 22px; }
+        .font-size-extra { font-size: 26px; }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .lesson-card:active {
+            transform: scale(0.98);
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<body class="text-on-surface font-body-md text-body-md min-h-screen flex flex-col pb-[120px] bg-white"
+    style="background-color: white;">
+
+    <div class="fixed inset-0 bg-black/40 z-[60] opacity-0 transition-opacity hidden" id="modal-overlay"
+        onclick="closeSummaryModal()">
+        <div class="absolute bottom-0 left-0 right-0 bg-[#F2F2F7] rounded-t-[32px] overflow-hidden translate-y-full max-h-[92vh] flex flex-col"
+            id="bottom-sheet" onclick="event.stopPropagation()">
+            <div class="w-12 h-1.5 bg-gray-300 rounded-full mx-auto mt-3 mb-2 flex-shrink-0"></div>
+            <div class="px-6 py-4 flex items-start justify-between bg-[#F2F2F7]">
+                <div>
+                    <h2 class="text-xl font-bold text-on-surface" id="modal-titulo-geral">Resumo da Lição</h2>
+                    <p class="text-secondary text-sm" id="modal-subtitulo-geral">Carregando...</p>
+                </div>
+                <button
+                    class="text-primary font-semibold text-lg py-1 px-3 bg-surface-container-high rounded-full active-scale"
+                    onclick="closeSummaryModal()">Fechar</button>
+            </div>
+
+            <div class="flex-1 overflow-y-auto px-4 pb-32 space-y-8" id="modal-lista-resumo">
+            </div>
+
+            <div
+                class="absolute bottom-0 left-0 right-0 p-6 bg-white/80 backdrop-blur-md border-t border-outline-variant">
+                <button
+                    class="w-full h-touch-target-min bg-primary-container text-on-primary font-button-text text-button-text rounded-xl shadow-lg flex items-center justify-center gap-3 active-scale transition-all"
+                    onclick="compartilharRespostas()">
+                    <span class="material-symbols-outlined">share</span>
+                    Compartilhar no Grupo
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <header
+        class="bg-surface sticky top-0 z-50 border-b border-outline-variant px-margin-mobile h-touch-target-min flex items-center justify-between">
+        <button aria-label="Voltar para a página anterior"
+            class="flex items-center gap-1 text-primary active-scale font-label-lg text-label-lg"
+            onclick="window.location.href = 'selecao-licoes.html'">
+            <span class="material-symbols-outlined">arrow_back_ios</span>
+            <span id="topo-nome-livro">Voltar</span>
+        </button>
+        <div class="w-[80px] md:w-[120px]"></div>
+    </header>
+
+    <main class="flex-1 w-full max-w-[1100px] mx-auto px-margin-mobile mt-10 space-y-12 transition-all duration-300"
+        id="content-area">
+        <section>
+            <h1
+                class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface">
+                Carregando Lição...
+            </h1>
+        </section>
+
+        <section>
+            <div
+                class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant shadow-md transition-transform hover:translate-y-[-2px]">
+                <p class="text-primary-container font-label-lg text-label-lg mb-4 tracking-wide uppercase">
+                    Memorize a VERDADE!
+                </p>
+                <blockquote class="text-[#1b1b1b] font-headline-md text-headline-md italic leading-tight">
+                </blockquote>
+            </div>
+        </section>
+
+        <section class="sticky top-[56px] py-4 z-40 bg-white" style="background-color: white;">
+            <div class="grid grid-cols-3 gap-3" id="abas-dias-container">
+            </div>
+        </section>
+
+        <section class="flex items-start gap-4 py-6 border-l-4 border-primary pl-4">
+            <h2 class="text-[24px] font-bold text-[#1d1d1f] leading-tight tracking-tight" id="cabecalho-dia-texto">
+            </h2>
+        </section>
+
+        <section class="space-y-12 pb-10" id="container-lista-perguntas">
+        </section>
+    </main>
+
+    <footer
+        class="fixed bottom-0 left-0 w-full bg-surface/90 backdrop-blur-md border-t border-outline-variant px-margin-mobile py-6 z-50">
+        <div class="max-w-[1100px] mx-auto flex gap-4">
+            <button
+                class="flex-1 h-touch-target-min bg-surface-container-high text-on-surface font-button-text text-button-text rounded-xl active-scale flex items-center justify-center gap-2 transition-all"
+                onclick="mudarDiaAnterior()">
+                <span class="material-symbols-outlined">chevron_left</span>
+                Anterior
+            </button>
+            <button
+                class="flex-1 h-touch-target-min bg-primary-container text-on-primary font-button-text text-button-text rounded-xl active-scale flex items-center justify-center gap-2 shadow-lg transition-all"
+                onclick="mudarProximoDia()">
+                Próxima
+                <span class="material-symbols-outlined">chevron_right</span>
+            </button>
+        </div>
+    </footer>
+
+    <script>
+        function openSummaryModal() {
+            construirResumoNoModal();
+            const overlay = document.getElementById('modal-overlay');
+            const sheet = document.getElementById('bottom-sheet');
+            overlay.classList.remove('hidden');
+            setTimeout(() => {
+                overlay.classList.remove('opacity-0');
+                sheet.classList.remove('translate-y-full');
+                document.body.style.overflow = 'hidden';
+            }, 10);
+        }
+
+        function closeSummaryModal() {
+            const overlay = document.getElementById('modal-overlay');
+            const sheet = document.getElementById('bottom-sheet');
+            overlay.classList.add('opacity-0');
+            sheet.classList.add('translate-y-full');
+            setTimeout(() => {
+                overlay.classList.add('hidden');
+                document.body.style.overflow = '';
+            }, 400);
+        }
+
+        let currentSizeLevel = 0;
+        const fontSizes = {
+            '-1': { body: '16px', headline: '24px', label: '14px' },
+            '0': { body: '18px', headline: '28px', label: '16px' },
+            '1': { body: '22px', headline: '32px', label: '20px' },
+            '2': { body: '26px', height: '40px', label: '24px' }
+        };
+
+        function applySizes() {
+            const config = fontSizes[currentSizeLevel];
+            document.querySelectorAll('.text-body-md, .text-body-lg').forEach(el => { el.style.fontSize = config.body; });
+            document.querySelectorAll('.text-headline-md, .text-headline-lg-mobile').forEach(el => { el.style.fontSize = config.headline; });
+            document.querySelectorAll('.text-label-lg').forEach(el => { el.style.fontSize = config.label; });
+            document.querySelectorAll('textarea').forEach(el => { el.style.fontSize = config.body; });
+        }
+    </script>
+
+    <script src="./assets/js/dados.js"></script>
+
+    <script>
+        // CAPTURA INTELIGENTE: Puxa o livro e a lição exata gravados no navegador pelas telas anteriores
+        const livroAtual = localStorage.getItem('livro_selecionado') || "tiago";
+        const licaoAtual = localStorage.getItem('licao_selecionada') || "licao_2";
+        let diaAtivo = 1;
+
+        document.addEventListener("DOMContentLoaded", () => {
+            inicializarInterface();
+        });
+
+        function inicializarInterface() {
+            const nomeLivroObj = estudos[livroAtual].nome_livro;
+            document.getElementById('topo-nome-livro').innerText = nomeLivroObj ? nomeLivroObj.replace('Estudos Bíblicos em Comunidade - ', '') : "Voltar";
+
+            renderizarGradeBotoes();
+            carregarLicaoDoDia();
+        }
+
+        function renderizarGradeBotoes() {
+            const containerAbas = document.getElementById('abas-dias-container');
+            containerAbas.innerHTML = '';
+
+            for (let i = 1; i <= 6; i++) {
+                const botao = document.createElement('button');
+                botao.id = `btn-dia-${i}`;
+                botao.innerText = `Dia ${i}`;
+                botao.onclick = () => {
+                    diaAtivo = i;
+                    carregarLicaoDoDia();
+                };
+                containerAbas.appendChild(botao);
+            }
+
+            const botaoResumo = document.createElement('button');
+            botaoResumo.className = "col-span-3 bg-surface-container-lowest text-primary border border-primary font-label-lg text-label-lg py-4 rounded-xl active-scale hover:bg-primary-fixed transition-all";
+            botaoResumo.innerText = "Resumo das Respostas";
+            botaoResumo.onclick = openSummaryModal;
+            containerAbas.appendChild(botaoResumo);
+        }
+
+        function atualizarEstiloBotoes() {
+            for (let i = 1; i <= 6; i++) {
+                const botao = document.getElementById(`btn-dia-${i}`);
+                if (!botao) continue;
+
+                if (i === diaAtivo) {
+                    botao.className = "flex-shrink-0 bg-primary-container text-on-primary font-label-lg text-label-lg px-6 py-3 rounded-xl active-scale whitespace-nowrap shadow-md";
+                } else {
+                    botao.className = "flex-shrink-0 bg-surface-container-high text-on-surface-variant font-label-lg text-label-lg px-6 py-3 rounded-xl active-scale whitespace-nowrap hover:bg-surface-variant transition-colors";
+                }
+            }
+        }
+
+        function carregarLicaoDoDia() {
+            const licao = estudos[livroAtual].licoes[licaoAtual];
+            const chaveDia = `dia_${diaAtivo}`;
+            const dadosDia = licao.dias[chaveDia];
+
+            const containerVersiculo = document.querySelector('blockquote');
+            if (containerVersiculo && licao.memorize_a_verdade) {
+                containerVersiculo.innerText = licao.memorize_a_verdade;
+            }
+
+            const tituloPagina = document.querySelector('main h1');
+            if (tituloPagina) {
+                // Agora o título exibe dinamicamente o número e nome real da lição clicada!
+                tituloPagina.innerText = `${estudos[livroAtual].nome_livro.replace('Estudos Bíblicos em Comunidade - ', '')} Lição ${licao.numero}: ${licao.titulo}`;
+            }
+
+            const containerCabecalho = document.getElementById('cabecalho-dia-texto');
+            if (diaAtivo === 6) {
+                containerCabecalho.innerText = `DIA 6: Encontro Presencial — ${dadosDia.tema}`;
+            } else {
+                containerCabecalho.innerText = `DIA ${diaAtivo}: ${dadosDia.referencia} — ${dadosDia.tema}`;
+            }
+
+            const containerPerguntas = document.getElementById('container-lista-perguntas');
+            containerPerguntas.innerHTML = '';
+
+            if (dadosDia.perguntas.length === 0) {
+                const cardAviso = document.createElement('div');
+                cardAviso.className = "p-8 bg-surface-container-low rounded-xl text-center border border-outline-variant/50 w-full";
+                cardAviso.innerHTML = `
+                    <span class="material-symbols-outlined text-primary text-4xl mb-3" style="font-variation-settings: 'FILL' 1">groups</span>
+                    <p class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">Hoje é dia de Comunhão!</p>
+                    <p class="text-secondary text-sm">Não há perguntas para responder hoje. Prepare suas anotações da semana para compartilhar no nosso encontro do grupo de estudos.</p>
+                `;
+                containerPerguntas.appendChild(cardAviso);
+            } else {
+                dadosDia.perguntas.forEach((perguntaTexto, index) => {
+                    const numeroQuestao = index + 1;
+                    const chaveStorage = `${livroAtual}_${licaoAtual}_dia_${diaAtivo}_q${numeroQuestao}`;
+
+                    const cardQuestao = document.createElement('div');
+                    cardQuestao.className = "flex flex-col gap-6 p-6 bg-surface-container-lowest rounded-xl border border-outline-variant transition-all duration-200";
+
+                    const respostaSalva = localStorage.getItem(chaveStorage) || "";
+
+                    cardQuestao.innerHTML = `
+                        <h3 class="text-on-primary-fixed-variant font-headline-md text-headline-md flex items-center gap-3">
+                            <span class="w-2 h-8 bg-primary rounded-full"></span>
+                            Questão ${numeroQuestao}
+                        </h3>
+                        <label class="text-[#1b1b1b] font-body-lg text-body-lg font-semibold leading-relaxed">
+                            ${perguntaTexto}
+                        </label>
+                        <textarea
+                            class="w-full min-h-[200px] p-6 bg-surface-container-lowest border-2 border-outline-variant rounded-xl text-body-lg focus:border-primary focus:ring-0 transition-all placeholder:text-outline"
+                            placeholder="Digite sua resposta aqui..."
+                            oninput="salvarRespostaRealTime('${chaveStorage}', this.value)">${respostaSalva}</textarea>
+                    `;
+
+                    containerPerguntas.appendChild(cardQuestao);
+                });
+            }
+
+            atualizarEstiloBotoes();
+            applySizes();
+
+            document.getElementById('cabecalho-dia-texto').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        function salvarRespostaRealTime(chave, texto) {
+            localStorage.setItem(chave, texto.trim());
+        }
+
+        function construirResumoNoModal() {
+            const licao = estudos[livroAtual].licoes[licaoAtual];
+
+            document.getElementById('modal-titulo-geral').innerText = "Resumo da Lição";
+            document.getElementById('modal-subtitulo-geral').innerText = `${estudos[livroAtual].nome_livro.replace('Estudos Bíblicos em Comunidade - ', '')} Lição ${licao.numero}: ${licao.titulo}`;
+
+            const containerListaResumo = document.getElementById('modal-lista-resumo');
+            containerListaResumo.innerHTML = '';
+
+            for (let d = 1; d <= 5; d++) {
+                const chaveDia = `dia_${d}`;
+                const dadosDia = licao.dias[chaveDia];
+
+                if (!dadosDia || !dadosDia.perguntas) continue;
+
+                const sectionDia = document.createElement('section');
+
+                const rotuloDia = document.createElement('h3');
+                rotuloDia.className = "px-4 mb-2 font-label-lg text-label-lg text-on-surface-variant uppercase tracking-wider text-xs font-bold";
+                rotuloDia.innerText = `DIA ${d}`;
+                sectionDia.appendChild(rotuloDia);
+
+                const cardBranco = document.createElement('div');
+                cardBranco.className = "bg-white rounded-xl overflow-hidden shadow-sm border border-outline-variant/30";
+
+                let htmlInternoDoCard = '';
+
+                dadosDia.perguntas.forEach((perguntaTexto, index) => {
+                    const numeroQuestao = index + 1;
+                    const chaveStorage = `${livroAtual}_${licaoAtual}_dia_${d}_q${numeroQuestao}`;
+
+                    const respostaUsuario = localStorage.getItem(chaveStorage);
+
+                    const temResposta = respostaUsuario && respostaUsuario.length > 0;
+                    const textoExibicaoResposta = temResposta ? respostaUsuario : "Nenhuma anotação feita";
+                    const classeEstiloResposta = temResposta ? "font-label-lg text-label-lg text-on-surface" : "font-label-lg text-label-lg text-outline italic";
+
+                    if (index > 0) {
+                        htmlInternoDoCard += `<div class="h-[1px] bg-[#F2F2F7] ml-5"></div>`;
+                    }
+
+                    htmlInternoDoCard += `
+                        <div class="p-5">
+                            <p class="text-[14px] font-semibold text-on-surface-variant mb-1">${perguntaTexto}</p>
+                            <p class="${classeEstiloResposta}">${textoExibicaoResposta}</p>
+                        </div>
+                    `;
+                });
+
+                cardBranco.innerHTML = htmlInternoDoCard;
+                sectionDia.appendChild(cardBranco);
+                containerListaResumo.appendChild(sectionDia);
+            }
+        }
+
+        function compartilharRespostas() {
+            const licao = estudos[livroAtual].licoes[licaoAtual];
+            let textoMensagem = `*Meu Resumo do Estudo - Caminho*\n_${estudos[livroAtual].nome_livro}_\n*Lição ${licao.numero}: ${licao.titulo}*\n\n`;
+
+            for (let d = 1; d <= 5; d++) {
+                const chaveDia = `dia_${d}`;
+                const dadosDia = licao.dias[chaveDia];
+                if (!dadosDia) continue;
+
+                textoMensagem += `--- *DIA ${d}* ---\n`;
+                dadosDia.perguntas.forEach((perguntaTexto, index) => {
+                    const numeroQuestao = index + 1;
+                    const chaveStorage = `${livroAtual}_${licaoAtual}_dia_${d}_q${numeroQuestao}`;
+                    const resposta = localStorage.getItem(chaveStorage) || "Não respondida.";
+
+                    textoMensagem += `*Q${numeroQuestao}:* ${perguntaTexto}\n*R:* ${resposta}\n\n`;
+                });
+            }
+
+            navigator.clipboard.writeText(textoMensagem).then(() => {
+                alert("Resumo formatado e copiado com sucesso! Agora é só colar no grupo de WhatsApp da sua igreja. 👍");
+            }).catch(err => {
+                console.error("Erro ao copiar: ", err);
+            });
+        }
+
+        function mudarDiaAnterior() {
+            if (diaAtivo > 1) {
+                diaAtivo--;
+                carregarLicaoDoDia();
+            }
+        }
+
+        function mudarProximoDia() {
+            if (diaAtivo < 6) {
+                diaAtivo++;
+                carregarLicaoDoDia();
+            } else if (diaAtivo === 6) {
+                openSummaryModal();
+            }
+        }
+    </script>
+    <script src="./assets/js/acessibilidade.js"></script>
+</body>
+
+</html>

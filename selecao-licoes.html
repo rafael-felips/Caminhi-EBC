@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html class="light" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Caminho - Início</title>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="./assets/styles/tailwind.config.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+            vertical-align: middle;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f2f2f7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .touch-target {
+            min-height: 56px;
+        }
+
+        .bottom-sheet {
+            transform: translateY(100%);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .bottom-sheet.open {
+            transform: translateY(0);
+        }
+
+        .modal-overlay {
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-overlay.open {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        /* Dynamic Font Sizes */
+        .font-size-pequeno { font-size: 14px; }
+        .font-size-medio { font-size: 18px; }
+        .font-size-grande { font-size: 22px; }
+        .font-size-extra { font-size: 26px; }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .lesson-card:active {
+            transform: scale(0.98);
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<body class="font-body-md text-on-background min-h-screen flex flex-col">
+    <header
+        class="bg-surface sticky top-0 z-40 w-full border-b border-outline-variant flex justify-between items-center px-margin-mobile h-touch-target-min">
+        <button aria-label="Voltar ao início"
+            class="flex items-center gap-2 text-on-primary-fixed-variant hover:opacity-70 transition-opacity p-2 -ml-2"
+            onclick="window.location.href = 'index.html'">
+            <span class="material-symbols-outlined text-[32px]">arrow_back</span>
+            <span class="font-button-text text-button-text">Voltar</span>
+        </button>
+        <div class="w-10"></div>
+    </header>
+
+    <main class="flex-1 w-full max-w-[1100px] mx-auto px-margin-mobile py-12">
+        <section class="mb-12 text-center md:text-left">
+            <h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface mb-2"
+                id="titulo-livro">
+                Carregando Estudo...
+            </h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant">
+                Selecione a lição desejada
+            </p>
+        </section>
+
+        <nav aria-label="Lista de Lições" class="space-y-6" id="container-lista-licoes">
+        </nav>
+
+        <div class="mt-16 rounded-3xl overflow-hidden shadow-lg border border-outline-variant hidden md:block">
+            <img alt="Bíblia e material de estudo" class="w-full h-80 object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcgY_LAgdTOKwkts6xbIxwbz53gXpyTETT5KPwOhkgiLhizmIPhsIJ6tdI1deVdguP8xUhKjBOyTSlCaq3oF78iCU7V6_0qSfNvv69_5bzSwJrJGkidi4UAdpSTm08bjJVvB7GqVIcL7Wr3_maivCjgvUrU9IEKEw8yXuH6MBL9wNY3ZRrRSUSPnnY2f9qCjpjNnsUP9plMeo5VlUNXhYMwVqgdhSHUxKxjsL0vEMj_u2h1JM9PrmPp8Y40VjSY4HSxki49BKChyE">
+        </div>
+    </main>
+
+    <div class="h-[88px]"></div>
+
+    <script src="./assets/js/dados.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            inicializarListaLicoes();
+        });
+
+        function inicializarListaLicoes() {
+            // 1. Resgata qual livro foi gravado pela Home no localStorage
+            const livroSelecionado = localStorage.getItem('livro_selecionado') || "tiago";
+            const dadosDoLivro = estudos[livroSelecionado];
+
+            if (!dadosDoLivro) {
+                console.error("Livro de estudo não encontrado no banco de dados.");
+                return;
+            }
+
+            // 2. Altera o título do cabeçalho de forma limpa (Ex: "Estudo de Tiago")
+            const campoTitulo = document.getElementById('titulo-livro');
+            if (campoTitulo && dadosDoLivro.nome_livro) {
+                campoTitulo.innerText = dadosDoLivro.nome_livro.replace('Estudos Bíblicos em Comunidade - ', 'Estudo de ');
+            }
+
+            // 3. Seleciona o contêiner de lições e limpa os placeholders estáticos do Stitch
+            const containerLicoes = document.getElementById('container-lista-licoes');
+            containerLicoes.innerHTML = '';
+
+            // 4. Varre o JSON buscando todas as lições cadastradas para o livro escolhido
+            Object.keys(dadosDoLivro.licoes).forEach(chaveLicao => {
+                const licaoObj = dadosDoLivro.licoes[chaveLicao];
+
+                // Cria o elemento estrutural do botão com o layout Apple Touch Target original
+                const botaoLicao = document.createElement('button');
+                botaoLicao.className = "lesson-card w-full flex items-center bg-surface-container-lowest border border-outline-variant rounded-xl p-5 shadow-sm transition-all duration-200 text-left min-h-touch-target-min";
+
+                // Inteligência de Roteamento baseada no formato do PDF:
+                botaoLicao.onclick = () => {
+                    // Guarda qual lição ativa deve ser lida pelas próximas telas
+                    localStorage.setItem('licao_selecionada', chaveLicao);
+
+                    if (chaveLicao === "licao_1" || licaoObj.conteudo_integral) {
+                        // Se for a Lição 1 (introdução teórica e contextual), navega para a tela de leitura
+                        window.location.href = "leitura-licao.html";
+                    } else {
+                        // Se for qualquer outra lição contendo perguntas diárias, vai para os questionários
+                        window.location.href = "questoes-licao.html";
+                    }
+                };
+
+                // Injeta a marcação combinando o número e o título oficial limpo vindo do dados.js
+                botaoLicao.innerHTML = `
+                    <div class="flex items-center justify-center w-12 h-12 rounded-full bg-primary-fixed text-on-primary-fixed-variant mr-4 flex-shrink-0">
+                        <span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1">book</span>
+                    </div>
+                    <span class="flex-1 font-headline-md text-headline-md text-on-surface">
+                        Lição ${licaoObj.numero}: ${licaoObj.titulo}
+                    </span>
+                    <span class="material-symbols-outlined text-on-surface-variant text-[32px]">chevron_right</span>
+                `;
+
+                // Adiciona micro-interações nativas de toque/clique para simular resposta tátil (Haptic Pulse)
+                adicionarEfeitoToque(botaoLicao);
+
+                containerLicoes.appendChild(botaoLicao);
+            });
+        }
+
+        // Função utilitária que simula o efeito de profundidade nativo da Apple ao pressionar o botão
+        function adicionarEfeitoToque(elemento) {
+            const aplicarSombra = () => elemento.style.boxShadow = 'inset 0 4px 6px -1px rgb(0 0 0 / 0.1)';
+            const removerSombra = () => elemento.style.boxShadow = '';
+
+            elemento.addEventListener('mousedown', aplicarSombra);
+            elemento.addEventListener('mouseup', removerSombra);
+            elemento.addEventListener('touchstart', aplicarSombra);
+            elemento.addEventListener('touchend', removerSombra);
+        }
+    </script>
+    <script src="./assets/js/acessibilidade.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,632 @@
+const dados = {
+  "tiago": {
+    "nivel": 4,
+    "nome_livro": "Estudos Bíblicos em Comunidade - Tiago",
+    "licoes": {
+      "licao_1": {
+        "numero": 1,
+        "titulo": "Fé e Ação",
+        "referencia_geral": "Tiago 1:1",
+        "conteudo_integral": {
+          "introducao": "O livro de Tiago é um livro de ação. Ele contém apenas 108 versiculos. Mas 60 desses versículos possuem comandos de ação. Isso é uma média de uma chamada à ação num versículo sim e outro não! Tiago acreditava fortemente que o que fazemos como seguidores de Cristo é tão importante quanto o que cremos sobre Ele. Às vezes, as pessoas se perguntam se Tiago contradisse o apóstolo Paulo. Paulo deu uma forte mensagem de que somos salvos somente pela fé. Tiago disse que a fé sem obras está morta. Mas Tiago não estava dizendo que nossas boas obras são o que nos tornam justos diante de Deus. Tiago ensinou que nossas obras provam que somos salvos pela fé. Ele exortou seus leitores de não apenas concordar com os ensinamentos da fé cristã. Tiago queria que os cristãos colocassem as aprendizagens em ação. Tiago foi específico sobre essa ação. Ela includes controlar nossas palavras, cuidar dos pobres e conviver uns com os outros. Ele enraizou suas instruções no mundo real. Ele mesmo disse que os problemas e a dor são inevitáveis e essenciais para o nosso crescimento espiritual. Pense nisto... no livro de Tiago como um livro de sabedoria. Ele é muitas vezes comparado com o livro de Provérbios no Antigo Testamento. Como Provérbios, Tiago contém muita sabedoria prática para viver. Ele aborda tópicos como o que dizemos, como nos relacionamos com os outros, o que fazemos com nossas emoções (raiva, por exemplo) e como lidamos com nosso dinheiro. São nessas áreas que a fé faz uma grande diferença em nossa conduta. Ao iniciar o estudo de Tiago, siga a sabedoria em Tiago 1:5: 'Se algum de vocês tem falta de sabedoria, peça-a a Deus, que a todos dá livremente, de boa vontade; e lhe será concedida'.",
+          "o_autor_da_carta": "O autor se descreveu simplesmente como 'Tiago, servo de Deus e do Senhor Jesus Cristo'. O Novo Testamento menciona vários homens chamados Tiago. Dois dos 12 discípulos de Jesus foram chamados Tiago. O primeiro foi Tiago, filho de Alfeu (veja Marcos 3:18). Os estudiosos da Bíblia acreditam que Tiago, filho de Alfeu, pode ser a mesma pessoa que 'Tiago, o Jovem' (veja Marcos 15:40). O segundo discípulo chamado Tiago era filho de Zebedeu (veja Marcos 1:19, 3:17). Tiago, filho de Zebedeu, foi martirizado em 44 DC. (veja Atos 12:1-2). No Evangelho de Lucas (Lucas 6:16) encontramos Tiago, o pai de Judas (não Judas Iscariotes). Finalmente, conhecemos Tiago, o irmão de Jesus (veja Mateus 13:55, Marcos 6:3). Como Tiago, o filho de Zebedeu, morreu cedo, e como os homens restantes chamados Tiago não eram conhecidos por serem amplamente influentes, o autor mais provável é Tiago, o membro da família de Jesus. Enquanto Jesus estava na terra, Tiago não creu nEle (veja João 7:5). Logo após Sua ressurreição, no entanto, Jesus apareceu a Tiago (veja 1 Coríntios 15:7). Parece que naquele momento, Tiago havia se tornado um cristão. Após a ascensão de Jesus, Tiago se juntou à Maria e aos outros discípulos in Jerusalém. Juntos, eles oraram pela vinda do Espírito Santo (veja Atos 1:14). Tiago foi criado em uma família fiel judaica (veja Lucas 2:22, 41). Isso pode explicar porque ele se interessou muito pelos cristãos judeus. Ele se tornou o líder da igreja de Jerusalém (veja Atos 15:13-21, 21:17-19). Ο apóstolo Paulo o chamou de coluna da igreja (veja Gálatas 2:9). Os historiadores Flávio Josefo e Eusébio relataram que Tiago foi martirizado por sua fé.",
+          "os_leitores_originais": "O livro de Tiago é considerado como uma carta geral. Isto significa que não foi dirigida a uma determinada igreja (como Gálatas) ou pessoa específica (como Tito). A carta de Tiago foi endereçada às 'doze tribos na Dispersão'. A palavra dispersão (grego: diáspora) pode ser traduzida como 'dispersa'. Geralmente se refere aos judeus que estavam espalhados além de Israel. O termo foi usado pela primeira vez para os judeus capturados pelos babilônios em 586 AC. Mais tarde, referia-se aos judeus que ficaram no exterior quando alguns de seus compatriotas retornaram a Jerusalém (veja Esdras 1:1-4). Tiago provavelmente usou essa palavra para se referir aos cristãos judeus espalhados pelo Oriente Médio e pela Europa. Estes teriam incluído aqueles que fugiram de Jerusalém depois de Estêvão ter sido martirizado (veja Atos 7:59-8:4) ou quando Herodes começou a perseguir os cristãos (veja Atos 12). Tiago também poderia estar se dirigindo a todos os cristãos, judeus e gentios, que viviam fora de Jerusalém. Pense nisto... a carta de Tiago nos ensina sobre evangelismo. Tiago parecia muito consciente de que os cristãos estavam sendo observados. Ele queria ter certeza de que a maneira como eles viviam correspondia ao que eles acreditavam, porque uma fé genuína também é uma fé observável. As pessoas podem ver Jesus pelo modo como vivemos. Ao lermos sua carta hoje, ele ainda está nos pedindo para considerar esta pergunta: O que minha conduta comunica sobre meu Deus e minha fé? Convide o Espírito Santo a ensiná-lo em 'evangelismo observável' através da carta de Tiago.",
+          "a_data_da_escrita": "Estudiosos acreditam que Tiago é o livro mais antigo do Novo Testamento. Tiago provavelmente o completou alguns anos depois de 44 DC. Neste ano, Tiago se tornou o líder da igreja de Jerusalém. O livro não contém muitas das características usuais das cartas do Novo Testamento. Ele não contém saudações a amigos, despedidas ou bênçãos. Isso apoia a crença de que Tiago escreveu antes que o formato se tornasse padrão.",
+          "o_estilo_da_carta": "O livro de Tiago soa mais como uma palestra do que uma carta. A escrita tem energia. Às vezes parece quase abrupto. Os exemplos são vívidos. Tiago frequentemente usava a natureza para dar vida aos seus pontos de vista. Suas ilustrações incluem mar, vento, sol, água doce e água salgada, árvores e incêndios florestais. Ele frequentemente mencionava plantas, culturas e agricultores, o que reflete a sociedade agrária daquele tempo e lugar. Sua palavra retrata - línguas desenfreadas, grama queimada, agricultores pacientes - permanece significativa para todas as idades e culturas. A escrita de Tiago também é notável pelo quão fortemente se assemelha ao estilo de ensino de Jesus. Na verdade, ao longo do livro de Tiago existem passagens semelhantes ao Sermão na Montanha (Mateus 5-7). Ele também aludiu a mais de 21 livros do Antigo Testamento na sua escrita. O seguinte esboço nos ajuda a entender o conteúdo da carta: Introdução (1:1), Fé e Crescimento (1:2-27), Fé e Sociedade (capítulo 2), Fé e Discurso (capítulo 3), Fé e Luta (capítulo 4), Fé e Prática (capítulo 5).",
+          "personalize_a_verdade": "O livro de Tiago provavelmente revelará algumas áreas onde seu comportamento não corresponde às suas crenças. Quando isso acontece, você pode ser tentado a questionar Deus ou ignorar os comandos que o deixam desconfortável. Ou, como Tiago sugeriu, você poderia optar por 'aceitar humildemente a palavra implantada' (1:21). Receber a Palavra de Deus é acolhê-la, como se você recebesse um amigo ou um presente. Portanto, todos os dias, antes de começar seu estudo de Tiago, convide Deus a falar no seu coração. Peça a Ele que lhe mostre o que você precisa receber naquele dia. Então recebam Seu presente com gratidão e ânsia pela bênção que o presente lhes trará."
+        },
+        "dias": {}
+      },
+      "licao_2": {
+        "numero": 2,
+        "titulo": "Fé e Crescimento",
+        "referencia_geral": "Tiago 1:2-27",
+        "memorize_a_verdade": "\"Se algum de vocês tem falta de sabedoria, peça-a a Deus, que a todos dá livremente, de boa vontade; e lhe será concedida\". Tiago 1:5",
+        "dias": {
+          "dia_1": {
+            "referencia": "Tiago 1:2-4",
+            "tema": "Como ser Firme nas Provações",
+            "perguntas": [
+              "1. Qual atitude Tiago exortou os cristãos a ter quando enfrentam as várias provações da vida?",
+              "2. Quais beneficios resultam dessa atitude?",
+              "3. Como você acha que a firmeza se parece na prática? Dê um exemplo específico, se puder."
+            ]
+          },
+          "dia_2": {
+            "referencia": "Tiago 1:5-11",
+            "tema": "Perseguindo a Sabedoria",
+            "perguntas": [
+              "4. O que Tiago disse para pedir durante as provações da vida?",
+              "5. Como Tiago descreveu a pessoa que duvida que Deus será generoso em dar sabedoria?",
+              "6. Que perspectiva Tiago encorajou os cristãos pobres e ricos a ter sobre sua situação financeira?"
+            ]
+          },
+          "dia_3": {
+            "referencia": "Tiago 1:12-18",
+            "tema": "Entendendo a Tentação",
+            "perguntas": [
+              "7. O que Tiago queria que seus leitores soubessem sobre o caráter de Deus (1:13, 17)?",
+              "8. A partir de suas nossas observações, quais desculpas as pessoas usam para ceder à tentação?",
+              "9. O que Tiago identificou como a verdadeira fonte de tentação?"
+            ]
+          },
+          "dia_4": {
+            "referencia": "Tiago 1:19-25",
+            "tema": "A Conduta da Fé",
+            "perguntas": [
+              "10. Quais atitudes e ações esta passagem encoraja?",
+              "11. Quais atitudes e ações essa passagem desencoraja?",
+              "12. O que é perigoso em apenas ouvir a Palavra de Deus e não fazer o que ela diz?",
+              "13. Muitas vezes pensamos em leis que restringem a nossa liberdade, mas Tiago se referiu à 'lei perfeita, a lei da liberdade'. Como você acha que a liberdade pode vir desta lei?"
+            ]
+          },
+          "dia_5": {
+            "referencia": "Tiago 1:26-27",
+            "tema": "Religião Verdadeira",
+            "perguntas": [
+              "14. Quais exemplos de religião genuína em ação você vê nesses versículos?",
+              "15. Por que você acha que 'órfãos e viúvas' precisam de atenção especial?",
+              "16. Tiago queria que seus leitores se mantivessem livres da corrupção do mundo. Quais são algumas maneiras pelas quais o mundo pode corromper uma pessoa que está tentando seguir Cristo?"
+            ]
+          },
+          "dia_6": {
+            "referencia": "Encontro",
+            "tema": "Participe do Grupo",
+            "perguntas": []
+          }
+        },
+        "devocionais_e_comentarios": {
+          "aprenda_a_verdade": "Nada testa nossa fé como as provações. Podemos dizer que acreditamos que Deus é bom e amoroso, mas quando experimentamos sofrimento e tempos difíceis, como reagimos? O que faremos? É aí que entra a sabedoria. A sabedoria nos ajuda a ver da perspectiva de Deus. Isso nos ajuda a entender o que acontece conosco e com os outros. O que você está lutando para entender hoje? Siga as instruções de Tiago: Peça sabedoria a Deus. Compartilhe com seu grupo o que Ele lhe mostrou e como você respondeu.",
+          "pratique_a_verdade": "Você pode pensar em um momento em que você aplicou a Palavra de Deus à sua vida e isso o libertou e o abençoou (veja Tiago 1:25)? Compartilhe essa história nesta semana com alguém que está lutando com a aplicação da Palavra de Deus em alguma área da vida. Sua experiência pode encorajar essa pessoa a perseverar e ser abençoada. Compartilhe com seu grupo sobre como essa pessoa respondeu à sua história.",
+          "comentario_integral": {
+            "como_resistir_a_uma_avaliacao_fe_e_crescimento": "Tiago sabia que seus leitores estavam sofrendo. Quando a perseguição os expulsou de sua terra natal, muitos deles tiveram que começar de novo como agricultores arrendatários ou trabalhadores não qualificados. Além disso, eles enfrentaram provações comuns, como doença, perda, solidão, decepção e tentação. Tiago ofereceu uma perspectiva inesperada sobre essas tribulações. Ele escreveu: 'considerem motivo de grande alegria'. A palavra que ele usou para 'considerar' é um termo contábil. Quando um contador coloca itens na coluna de perda ou na coluna de lucro, essa pessoa está decidindo qual valor colocar em cada item. Muitos de nós gostaríamos de considerar nossas provações como uma perda. Tiago, no entanto, alegou que as tribulações deveriam ir para a coluna de lucro. Eram motivo de alegria. Pense nisto... na inevitabilidade das provações para o povo de Deus. Jesus disse: 'Neste mundo vocês terão aflições' (João 16:33). Jesus também disse, no entanto, que Ele venceu o mundo e enviou Seu Espírito para nos ajudar a superá-lo também. Deus está conosco em nossos tempos difíceis. Ele promete que um dia seremos 'maduros e íntegros, sem que falte a nós coisa alguma'. Nós amadurecemos por causa das provações, não apesar delas. Uma razão pela qual nos regozijamos nas provações é que elas produzem firmeza e perseverança. Ser firme nos permite permanecer calmos e consistentes nas situações mais difíceis. Tiago encorajou os cristãos de que, à medida que continuassem perseverantes, eles se tornariam 'maduros e integros'. Até que nos tornemos maduros e íntegros, no entanto, podemos sentir como se vivêssemos em um mar tempestuoso. Podemos ficar calmos e firmes entre as ondas e o vento, ou podemos ser jogados de um lado para outro. A diferença está em como respondemos ao convite: 'Se algum de vocês tem falta de sabedoria, peça-a a Deus'. Quando pedimos e confiamos em Sua capacidade e vontade de dar, recebemos sabedoria. Pense nisto... Deus como um doador. Quando Tiago escreveu: 'peça-a a Deus, que a todos dá livremente, de boa vontade', ele literalmente escreveu, 'peça ao Deus que dá'. Você vê Deus como o Deus que dá ou como o Deus que retém? O que acreditamos sobre o caráter de Deus tem um impacto enorme em como oramos. Para a próxima semana, tente começar as suas orações com 'Querido Deus que tanto nos dá...' Isso pode mudar a forma como você ora, deixando de ser instável e se tornando alguém que pede com fé e recebe abundantemente.",
+            "riquezas_e_pobreza": "Em seguida, Tiago recorreu a um julgamento específico: a pobreza. Ele encorajou os pobres a reconhecerem sua posição diante dos olhos de Deus e se ostentarem disso. Mesmo os cristãos mais pobres receberão uma herança eterna. Os ricos também enfrentam provações. Riqueza e facilidade podem fazer com que o povo de Deus se esqueça dEle e coloque sua confiança em suas próprias habilidades para cuidar de si mesmos (veja Deuteronômio 8:13-14; Salmos 62:10). A busca de riquezas pode estrangular o desejo de conhecer a Deus (veja Marcos 4:19), o que nos torna vulneráveis à tentação (veja 1 Timóteo 6:9). Não é de admirar que Tiago exortou os ricos a serem humildes.",
+            "provacoes_e_tentacoes": "Tiago continuou sua discussão sobre permanecer firme, mesmo quando as tentações testam nossa fé. A tentação vem a nós de várias maneiras. O inimigo pode nos atacar diretamente. Mas, mais frequentemente, a tentação vem através dos testes e provações cotidianos que enfrentamos. Cada prova e provação cria uma oportunidade para provar nossa fé. Deus nunca nos tenta a pecar. O inimigo, por outro lado, nos tenta com o propósito de destruir nossa fé. Mas quando perseverarmos com Deus, o resultado será bom. Cada provação traz tentação. Por exemplo, quando somos maltratados é mais fácil ficar com raiva e buscar vingança do que amar nossos inimigos. Ou a pobreza poderia nos tentar a procurar maneiras desonestas de aumentarmos nossa renda. No entanto, a tentação não tem que resultar em pecado. A tentação ocorre quando queremos seguir nossos próprios desejos em vez de seguirmos o que sabemos ser da vontade de Deus. Somos tentados quando pensamos que nossas vidas precisam seguir o caminho que desejamos. Tiago comparou os passos da tentação com os passos do parto. Quando cedemos (em vez de rejeitar) à uma tentação, ela dá origem a ações pecaminosas. Ações pecaminosas então dão à luz a morte (veja Romanos 6:23). Alguns cristãos desanimam porque continuam passando por tentações. Eles temem que isto signifique que algo está faltando em seu relacionamento com Deus. No entanto, a tentação será a experiência de todo cristão. Foi a experiência de Cristo (veja Hebreus 2:18). A medida da maturidade espiritual não é quão infrequente somos tentados, mas com que frequência nos entregamos à tentação. Tiago então voltou ao assunto da natureza de Deus. Longe de ser o autor da tentação, Deus é perfeito, puro e cheio de luz. Ele é totalmente confiável. Não há inconsistência entre Suas ações e Seu caráter. Isso significa que Deus só pode dar dons bons e benéficos para Seus filhos.",
+            "conduta_da_fe": "A alegria diante das provações é uma maneira de expressar a fé. Outra maneira de expressar a fé é fazendo o que Deus diz. Por exemplo, os cristãos devem ser 'prontos para ouvir, tardios para falar e tardios para irar-se'. Medida que pensamos antes de falarmos, seremos menos propensos a entrar em erupção com raiva (ou despertar raiva nos outros), em parte porque estamos tendo tempo para ouvir a outra pessoa. O versículo 21 começa com a palavra 'portanto' que parece se referir à 'palavra da verdade' no versiculo 18. Se quisermos permanecer firmes nas provações, resistir à tentação e nos tornarmos oradores e ouvintes cuidadosos, precisamos receber a Palavra de Deus como o solo recebe uma semente. Esse solo precisa de remoção regular de 'sujeira e impiedade desenfreada' para que a semente da Palavra possa crescer. Medida que capinamos o solo, precisamos enriquecê-lo com 'mansidão'. Esta é uma atitude de aceitar o ensinamento de Deus ao em vez de resistir a ele. Receber a Palavra de Deus tem outro aspect: Devemos fazer o que ela diz e não apenas ouvir o que ela diz. Quando ouvimos a mensagem sem aplicá-la, mentimos para nós mesmos. Quando recebemos a Palavra e fazemos o que ela diz, o resultado é uma vida visivelmente diferente. Nossa conduta é compassiva para com aqueles que estão aflitos. Nosso discurso é cuidadoso e controlado. Nosso caráter não é corrompido pela má influência do mundo."
+          }
+        }
+      },
+      "licao_3": {
+        "numero": 3,
+        "titulo": "Fé e Sociedade",
+        "referencia_geral": "Tiago 2",
+        "memorize_a_verdade": "\"Assim como o corpo sem espírito está morto, também a fé sem obras está morta.\" Tiago 2:26.",
+        "dias": {
+          "dia_1": {
+            "referencia": "Tiago 2:1-7",
+            "tema": "O Problema com o Favoritismo",
+            "perguntas": [
+              "1. Que comportamento Tiago advertiu contra?",
+              "2. Qual exemplo Tiago usou para ajudar seus leitores a reconhecer esse tipo de comportamento?",
+              "3. Além dos ricos e poderosos, quem mais poderia receber atenção especial entre as reuniões de cristãos hoje? Como mostrar favoritismo pode trazer problemas para o povo de Deus?"
+            ]
+          },
+          "dia_2": {
+            "referencia": "Tiago 2:8-13",
+            "tema": "Relacionamentos à certa",
+            "perguntas": [
+              "4. De acordo com Tiago, qual é a 'lei real' para relacionamentos?",
+              "5. Como você acha que favorecer um group de pessoas ao em vez de outro grupo viola a lei real?",
+              "6. Tiago nos exortou a mostrar misericórdia em vez de julgamento (2:13). Quais são algumas maneiras que você já observou as pessoas mostrando misericórdia para os outros?"
+            ]
+          },
+          "dia_3": {
+            "referencia": "Tiago 2:14-19",
+            "tema": "Prova de Fé",
+            "perguntas": [
+              "7. Qual é o valor da fé que não é acompanhada por ações?",
+              "8. Leia Tiago 2:17 juntamente com as palavras de Paulo em Romanos 3:28: 'Pois sustentamos que o homem é justificado pela fé, independente da obediência à Lei'. Ambas as afirmações são a Palavra de Deus e são verdadeiras. Como você explicaria como eles se relacionam?",
+              "9. Que exemplo Tiago deu para provar que a fé sem as obras é morta? Como esse exemplo esclarece o que ele quis dizer?"
+            ]
+          },
+          "dia_4": {
+            "referencia": "Tiago 2:20-23",
+            "tema": "Exemplo de Abraão",
+            "observacao": "Em Gênesis 22, Deus pediu a Abraão que oferecesse seu filho, Isaque, como sacrificio. Abraão confiou em Deus e estava disposto a obedecer, mesmo a grande custo pessoal. No último momento, Deus providenciou um carneiro para tomar o lugar de Isaque. Abraão sacrificou o carneiro em vez de seu filho.",
+            "perguntas": [
+              "10. O que a disposição de Abraão em obedecer provou sobre sua fé?",
+              "11. Por que Tiago disse que Abraão era o amigo de Deus? O que a confiança tem a ver com amizade?",
+              "12. Por que você acha que Deus valoriza nossa confiança nEle? Como você pode aprofundar sua amizade com Deus?"
+            ]
+          },
+          "dia_5": {
+            "referencia": "Tiago 2:24-26",
+            "tema": "Exemplo de Raabe",
+            "observacao": "Em Josué 2, aprendemos sobre Raabe, uma prostituta que temia o único Deus verdadeiro. Sob o risco de sua própria vida, ela protegeu Seus mensageiros porque acreditava em Deus.",
+            "perguntas": [
+              "13. De acordo com Tiago 2:25, como as ações de Raabe provaram sua fé?",
+              "14. A que Tiago comparou a fé sem obras em 2:26?",
+              "15. Tiago falou sobre favoritismo, julgamento, fé e boas obras. Onde esta lição te desafiou mais? Por quê?"
+            ]
+          },
+          "dia_6": {
+            "referencia": "Encontro",
+            "tema": "Participe do Grupo",
+            "perguntas": []
+          }
+        },
+        "devocionais_e_comentarios": {
+          "aprenda_a_verdade": "Você às vezes luta para favorecer certas pessoas em vez de outras? Muitas vezes valorizamos a educação, a beleza, a posição, a fama, a riqueza e o poder. O que Deus valoriza nas pessoas, no entanto, não tem nada a ver com essas qualidades. Todos os dias desta semana, peça a Deus para ajudá-lo a ver as pessoas que você conhece da maneira que Ele as vê. Planeje descrever ao seu grupo o que você aprendeu olhando para as pessoas através dos olhos de Deus.",
+          "pratique_a_verdade": "Tiago desafiou a fé complacente. Quando irmãos e irmās não tem as necessidades básicas, a nossa fé morre se escolhermos não ajudar. Reflita sobre os cristãos ao seu redor. Quem você vê que pode precisar de sua ajuda? Peça a Deus que oriente você no que fazer para ajudar a atender às necessidades de cristãos ao seu redor. Comece com uma boa ação. Esteja preparado para compartilhar com seu grupo sobre sua experiência.",
+          "personalize_a_verdade": "Deus lhe mostrou uma área onde o que você diz que acredita é diferente de como você vive sua fé? A maioria de nós tem essas áreas. Talvez oramos em público, mas nunca em privado. Talvez falamos sobre como confiamos em Deus para suprir nossas necessidades, mas nos preocupamos com questões financeiras. Fale com Deus sobre como você quer mudar. Admita onde você está errando. Agradeça Ele por Sua misericórdia, que se renova cada manhã (veja Lamentações 3:22-23). Em seguida, peça a Ele para torná-lo mais sensível para sua próxima oportunidade de combinar o que você diz que acredita, com suas ações ou atitudes.",
+          "comentario_integral": {
+            "o_problema_com_o_favoritismo_fe_e_sociedade": "A carta de Tiago agora fica ainda mais específica esclarecendo as atitudes dos cristãos que colocam sua fé na prática. Primeiro, Tiago escreveu sobre imparcialidade, amor consistente e compaixão nos relacionamentos. Ele advertiu sobre mostrar favor a certas pessoas e negligenciar a outros. Quando tratamos os ricos melhor do que os pobres, Deus não fica satisfeito conosco. Tiago apontou que Deus escolheu os pobres para serem ricos em fé. Sua pobreza lhes dá a oportunidade de depender de Deus e experimentar Sua fidelidade de maneiras mais profunda. Eles têm uma herança espiritual duradoura. Tiago avisou para não desonrar os pobres. Ele também observou que os ricos podem ser indignos de confiança. Alguns deles usam o sistema legal para tirar proveito das pessoas. As pessoas que fazem isso não merecem tratamento especial. Pense nisto... no coração de Deus para os pobres e indefesos. Ao longo do Antigo Testamento, Deus continuamente exortou Seu povo a proteger órfãos e viúvas, cuidar dos pobres e oprimidos, alcançar o estrangeiro. No Novo Testamento, Jesus anunciou que veio para servir os pobres, os cativos, os oprimidos e os de coração partido (veja Lucas 4:18-19). Seu ministério não era apenas palavras, mas ato após ato, após ato de cura, compaixão, libertação e misericórdia. Quando respondemos às necessidades das pessoas, mostramos nossa semelhança familiar com nosso Pai celestial. No entanto, também é importante lembrar que Deus não condena as pessoas simplesmente por serem ricas. Para os ricos e pobres, o verdadeiro valor vem de uma vida que agrada a Deus. Deus chamou Abraão, que era muito rico, Seu amigo (veja Gênesis 13:2; Isaías 41:8). Jó também era rico, mas as Escrituras o descrevem como 'justo' e 'o homem mais rico do oriente' (veja Jó 1:1-3). O rico, José de Arimatéia era um seguidor de Jesus (veja Mateus 27:57, 59-60). Esses homens são significativos não porque tinham grande riqueza, mas porque viviam de maneira que agradavam Deus. Tiago disse que é errado dar atenção especial às pessoas porque elas são ricas. Também é errado ignorar os outros porque eles são pobres. Ambos os comportamentos quebram o que ele chamou de 'a lei real': 'Ame o seu próximo como a si mesmo' (veja Levítico 19:18; Mateus 22:39). O amor é misericordioso; o favoritismo é crítico. Tiago insistiu que cada um dos mandamentos de Deus é importante. Não podemos escolher obedecer a um mandamento e desobedecer a outro. Cada mandamento é parte de um todo. Deus vê os infratores como culpados, se quebrarmos todos os mandamentos, ou apenas um. Não podemos cometer assassinato ou adultério, mas se mentirmos ou deixarmos de amar nosso próximo, somos tão culpados diante de Deus como se tivéssemos quebrado todos os mandamentos (veja Mateus 5:18-19). Os leitores de Tiago, no entanto, sendo cristãos, estavam sob a 'lei da liberdade'. Deus os libertou do pecado para que pudessem obedece-Lo. Embora tivessem quebrado as leis de Deus, Deus não os julgaria por sua violação da lei por causa de sua fé in Jesus Cristo. A misericórdia venceu o julgamento. Agora que Deus lhes mostrou misericórdia através de Cristo, Ele queria que eles mostrassem misericórdia para com os outros como evidência de Cristo dentro deles.",
+            "fe_e_acao": "'De que adianta a fé sem obras?' Essa é a próxima pergunta desafiadora que Tiago fez. Ele começou com o exemplo de uma pessoa faminta e seminua. Como os leitores de Tiago responderam quando estas pessoas necessitadas pediram ajuda? Tiago disse que eles mandaram a pessoa carente embora com algumas palavras educadas, mas eles não deram nenhuma ajuda real. 'De que adianta isso?' Tiago repetiu. Tiago não estava dizendo que uma pessoa se justifica com Deus fazendo boas ações. A Escritura é muito clara que nossa salvação vem através da fé na vida, morte e ressurreição de Jesus. Efésios 2:8-9 afirma claramente: 'Pois vocês são salvos pela graça, por meio da fé, e isto não vem de vocês, é dom de Deus; não por obras, para que ninguém se glorie.' No entanto, o resultado da verdadeira fé in Jesus será um coração mudado e uma vida mudada. A pessoa que crê em Jesus vai querer se tornar cada vez mais como Ele. Depois de declarar tão claramente que nossa salvação vem pela fé, não pelas obras, Efésios 2 prossegue dizendo que fomos criados em Jesus 'para fazermos boas obras, as quais Deus preparou antes para nós as praticarmos'. Tiago estava dizendo a mesma coisa: a fé genuína resulta em obras que glorificam a Deus. Em seguida, Tiago inventou uma conversa na qual uma pessoa afirma que a fé ou as obras poderia salvar uma pessoa. Tiago discordou sem rodeios. Ele advertiu que a fé é inútil, sem valor prático, se afirma acreditar na verdade sobre Deus, mas não é sustentada por boas ações. Até os demônios acreditam que Deus existe e tremem com este fato. Esse tipo de fé não pode salvar ninguém. Não somos salvos pelas boas ações; somos salvos para boas ações. Tiago se voltou para o Antigo Testamento para provar seu ponto de vista na história da Bíblia. As ações de Abraão demonstraram que sua fé era genuína. Sua fé era a confiança no caráter e nas promessas de Deus, não apenas a crença de que Deus existe. A confiança resoluta de Abraão em Deus, apesar das consequências, honrou profundamente a Deus. A fé de Abraão era inabalável e Deus o chamou de 'amigo'. A prostituta Raabe, ao contrário dos cananeus ao seu redor, reconheceu o power de Deus. Ela declarou: 'O Senhor, o seu Deus, é Deus em cima nos céus e embaixo na terra' (Josué 2:11). Baseado em sua confissão, ela agiu. Arriscando sua própria vida, ela protegeu dois israelitas. A sua ação demonstrou fé genuína. Pense nisto... os exemplos de fé na ação que Tiago escolheu. Abraão era o pai físico da raça judaica e o pai espiritual de judeus e gentios. Ele era respeitado por sua obediência fiel e sua confiança nas promessas de Deus (veja Romanos 4, Hebreus 11:8-12). Deus o abençoou com grande riqueza e posição. Em contraste, Raabe era uma prostituta Gentia. Alguém como ela não teria sido oferecido o melhor lugar na igreja. Ela provavelmente não teria sido permitida de entrar numa igreja. No entanto, por mais diferentes que Abraão e Raabe fossem do lado de fora, eles compartilhavam a mesma vontade de arriscar tudo com base em sua fé em Deus. Alguns leitores têm lutado com o livro de Tiago, argumentando que ele apoia a salvação por obras. Ao ler atentamente todo o livro, no entanto, vemos o contrário. Tiago não argumentou que devemos adicionar obras à fé para sermos salvos. Nem ele argumentou que nossas obras podem nos salvar. Em vez disso, Tiago via as boas obras como o resultado inevitável da fé genuína. Boas obras são tão essenciais para a fé quanto a respiração é para a vida."
+          }
+        }
+      },
+      "licao_4": {
+        "numero": 4,
+        "titulo": "Fé e Fala",
+        "referencia_geral": "Tiago 3",
+        "memorize_a_verdade": "\"Todos tropeçamos de muitas maneiras. Se alguém não tropeça no falar, tal homem é perfeito, sendo também capaz de dominar todo o seu corpo.\" Tiago 3:2",
+        "dias": {
+          "dia_1": {
+            "referencia": "Tiago 3:1-2",
+            "tema": "Um Discurso de Mestre",
+            "perguntas": [
+              "1. Que aviso Tiago deu às pessoas que querem ser mestres? Por que ensinar a Palavra de Deus é uma responsabilidade tão séria?",
+              "2. Que maneira específica de tropeçar Tiago advertiu? Por que isso é especialmente importante para os mestres estarem cientes?",
+              "3. Muitas vezes pensamos nos mestres como pessoas que discursam diante de um grupo. De que outras maneiras as pessoas ensinam umas às outras? De qual maneira você é mestre?"
+            ]
+          },
+          "dia_2": {
+            "referencia": "Tiago 3:3-8",
+            "tema": "Línguas não Domadas",
+            "perguntas": [
+              "4. Quais imagens Tiago usou para descrever a lingua? Para você, qual é mais significativa? Por quê?",
+              "5. Provérbios 18:21 diz que tanto 'a língua tem poder sobre a vida e sobre a morte'. Quais são algumas exemplos de como podemos usar nossas palavras para produzir a morte?",
+              "6. Como podemos usar nossas palavras para produzir vida?"
+            ]
+          },
+          "dia_3": {
+            "referencia": "Tiago 3:9-12",
+            "tema": "Palavras Inconsistentes",
+            "perguntas": [
+              "7. Quais contradições Tiago apontou nesses versículos?",
+              "8. O que você acha que Tiago quis dizer quando disse que uma lingua descontrolada é 'incontrolável' (versículo 8)?",
+              "9. Quais são algumas maneiras de 'bendizemos nosso Senhor e Pai' com nossas palavras?",
+              "10. Quais são algumas maneiras de abençoar as pessoas com nossas palavras?"
+            ]
+          },
+          "dia_4": {
+            "referencia": "Tiago 3:13-16",
+            "tema": "Corações Sábios e Imprudentes",
+            "perguntas": [
+              "11. De acordo com Tiago, quais qualidades estão presentes em uma pessoa sábia?",
+              "12. Quais atitudes estão presentes no coração de uma pessoa imprudente?",
+              "13. Quais são alguns resultados dessa sabedoria 'não espiritual' (3:15-16)?"
+            ]
+          },
+          "dia_5": {
+            "referencia": "Tiago 3:17-18",
+            "tema": "Sabedoria do Céu",
+            "perguntas": [
+              "14. Como Tiago descreveu a sabedoria que vem de Deus?",
+              "15. Qual é a colheita dessa sabedoria? Como esta colheita é diferente da colheita que Tiago descreveu em 3:16?",
+              "16. Qual das qualidades em 3:17 você mais gostaria de ver Deus desenvolver em sua vida? Como viver de acordo com essa qualidade resultaria em uma colheita de paz?"
+            ]
+          },
+          "dia_6": {
+            "referencia": "Encontro",
+            "tema": "Participe do Grupo",
+            "perguntas": []
+          }
+        },
+        "devocionais_e_comentarios": {
+          "aprenda_a_verdade": "Tiago descreve a língua vividamente. Cavalos lutando contra o freio na boca. Navios lutando contra ventos fortes. Um bosque incendiado. Bestas, aves, veneno e muito mais. Nenhum de nós quer usar palavras para destruir os outros. Todos os dias desta semana, submeta suas palavras a Deus para que possam ser usadas para fins positivos em vez de destrutivos. Compartilhe os resultados com seu grupo.",
+          "pratique_a_verdade": "Onde você precisa da sabedoria de Deus na sua vida? Você tem relacionamentos ou decisões difíceis na sua casa ou trabalho? Você tem desafios na igreja, escola ou na sua comunidade? Você pode abordagem essas situações com sua própria sabedoria ou com a sabedoria de Deus. Se você escolher a sabedoria que vem do alto, examine novamente a lista de Tiago no versículo 17. Escolha uma dessas qualidades. Imagine como suas atitudes, ações e fala seriam diferentes se estivessem cheias dessa qualidade. Peça a Deus para te ajudar a viver dessa maneira e torná-lo sábio cada vez que você se depara com esta situação nesta semana. Compartilhe com seu grupo.",
+          "personalize_a_verdade": "Gostaria que suas palavras fossem mais vivificantes? Palavras de vida vêm de Deus, o doador da vida. À medida que deixamos que as palavras de Deus encham nossos corações e mentes, passaremos menos tempo nos arrependendo de nossas palavras cruéis e mais tempo falando palavras edificantes. Como você pode encontrar tempo em seu dia para ouvir mais das palavras de Deus? Você pode escrever versículos das Escrituras e colocar estes versículos onde você os verá com frequência durante o dia. Tente cantar músicas das Escrituras enquanto faz suas tarefas diárias. Peça a Deus para te dar ideias. Em seguida, compartilhe com seu grupo qual ideia você deseja começar a praticar primeiro.",
+          "comentario_integral": {
+            "um_discurso_de_mestre_fe_e_fala": "A fé genuína se revela pelo que faz (Tiago 2). Também se revela pelo que diz. Nesta passagem sobre o discurso, Tiago escreveu primeiro para as pessoas que querem ensinar. Nos dias de Jesus, o povo judeu muitas vezes honrou mestres ou rabinos, mesmo acima de seus próprios pais. Rabinos às vezes eram eleitos para servir no sinédrio judaico, a mais alta corte de sua nação. Este respeito pelos mestres continuou na igreja primitiva. O apóstolo Paulo priorizou o ensino em suas listas de dons dados pelo Espírito Santo (veja 1 Coríntios 12:28; Efésios 4:11). Pessoas com o dom de ensinar, como Paulo e Barnabé, foram escolhidas para espalhar a mensagem do evangelho para outras partes do mundo (veja Atos 13:1-2). A cultura grega também respeitava os mestres. Os ricos e educados passariam muitas horas conversando com mestres populares sobre filosofia, política, economia e religião. Como resultado, algumas pessoas se tornaram mestres pelas razões erradas. Mesmo os mestres com bons motivos enfrentaram as tentações únicas que muitas vezes vinham com fama e poder. É por isso que Tiago advertiu: 'Nós, os que ensinamos, seremos julgados com maior rigor' (Tiago 3:1). As palavras de um mestre têm grande influência. Eles podem moldar o caráter, a conduta e no caso de mestres religiosos - o destino eterno de um aluno. Pense nisto... como o Novo Testamento contrasta bons e maus mestres. Os maus não fazem jus ao que ensinam (veja Romanos 2:21-23). Eles apenas fingem entender o tópico (veja 1 Timóteo 1:6-7). Eles se importam mais com o que as pessoas querem ouvir do que com o que as pessoas precisam ouvir (veja 2 Timóteo 4:3). Em contraste, bons mestres são maduros e não orgulhosos (veja 1 Timóteo 3:6). Em continuamente se voltam para as Escrituras em busca de sabedoria (veja 2 Timóteo 3:14-15). E eles dão um bom exemplo por sua conduta (veja 1 Timóteo 4:12). Essas qualidades de bons mestres ainda são importantes para nós hoje, seja formalmente em uma aula ou informalmente em conversas casuais. Tiago resumiu sua mensagem aos mestres apontando que todos tropeçam às vezes, mas é especialmente fácil tropeçar no que dizemos. Aqueles que podem controlar suas línguas, disse Tiago, são 'perfeitos'. Como em Tiago 1:4, o significado da palavra perfeito é 'completo' ou 'maduro'.",
+            "domando_a_lingua": "Tiago agora se dirigia a todos os cristãos, não apenas àqueles que queriam ser mestres. Ele usou várias imagens para descrever o quão útil ou destrutiva a língua humana pode ser. Tiago a comparou como um freio colocado na boca de um cavalo, um leme que guia um navio enorme e uma faísca que incendeia uma floresta inteira. Cada pequeno objeto pode ser muito poderoso. A língua é assim. Tem o poder de dirigir, mas também o poder de destruir. Embora pequena e comparativamente insignificante, a língua pode mudar todo o curso da vida de uma pessoa. De acordo com Tiago, a língua humana obtém seu poder destrutivo do inferno. A palavra traduzida como 'inferno' refere-se a um local chamado Geena em um vale ao sul de Jerusalém. Sacrificios de crianças uma vez ocorreram lá. Na época de Tiago, as pessoas queimavam lixo, carcaças de animais e cadáveres de criminosos lá. Tornou-se um símbolo para o lago de fogo, um lugar de punição. Tiago disse que uma língua afiada pode causar esse tipo de atmosfera infernal. Tiago usou em seguinte um exemplo do mundo animal. As pessoas aprenderam a domar todos os tipos de animais, mas não suas próprias línguas selvagens. A língua é um 'mal incontrolável, cheio de veneno mortífero'. Ela pode destruir simplesmente com palavras. A palavra traduzida como 'incontrolável' também é usada em Tiago 1:8 para descrever a pessoa de mente dupla. O significado se estende além de instável ou inconstante. Isso implica uma perturbação que está fora de controle, quase anarquia. De uma língua incontrolável fluem o bem e o mal, a bênção e a maldição. Tal comportamento é completamente antinatural. É como uma nascente que produz água doce e salgada, uma figueira que produz azeitonas ou uma videira que produz figos.",
+            "sabedoria_verdadeira": "Tiago retorna ao tópico da sabedoria introduzido no capítulo 1. Tiago disse anteriormente que qualquer um que não tem sabedoria deve pedir a Deus e Ele vai dar a eles. Agora Tiago descreve como a sabedoria se parece. 'Quem é sábio e tem entendimento entre vocês? Que o demonstre por seu bom procedimento, mediante obras praticadas com a humildade que provém da sabedoria.' Você quase pode ouvir outro eco das palavras anteriores de Tiago no capítulo 2: 'Mostre-me a sua fé sem obras'. Assim como a verdadeira fé é acompanhada por conduta sábia. A vida das pessoas sábias é caracterizada por ações que agradam a Deus - e elas são humildes sobre isso. A sabedoria que Deus dá ajudará a controlar suas línguas e afetará as palavras que elas falam. Se, no entanto, seus corações estiverem cheios de 'inveja amarga e ambição egoísta', seu discurso não será nada sábio. Essas atitudes levam ao caos e ao aumento do comportamento maligno. Pense nisto... a diferença entre sabedoria e conhecimento. O conhecimento envolve o intelecto. Pessoas com conhecimento conhecem muita informação e fatos. Eles podem ser capazes de se envolver em conversas articuladas sobre uma grande variedade de tópicos importantes. Mas isso não significa automaticamente que eles são sábios. As pessoas podem ter muito conhecimento e ainda não serem sábias. Sabedoria é prática. Pessoas sábias sabem o que fazer em circunstâncias difíceis. Elas tomam boas decisões. Elas dão conselhos que resultam em paz e bondade. De onde vem a sabedoria? Vem de temer e obedecer a Deus. Salmos 111:10 diz 'O temor do SENHOR é o princípio da sabedoria.' Em Tiago 3:17, Tiago descreveu a sabedoria que vem de Deus. Essa sabedoria é: pura (moralmente inocente, livre de contaminação), pacífica (busca a reconciliação), amável (tolerante, disposta a ceder), compreensiva (disposta a considerar o ponto de vista de outra pessoa), cheia de misericórdia e bons frutos (compassiva, demonstra visivelmente o bem), imparcial (sem hipocrisia), sincera (honesta e transparente). Finalmente, Tiago encorajou os cristãos a serem pacificadores. Quando os pacificadores semearem a paz, 'uma colheita de justiça' resultará."
+          }
+        }
+      },
+      "licao_5": {
+        "numero": 5,
+        "titulo": "Fé e Luta",
+        "referencia_geral": "Tiago 4",
+        "memorize_a_verdade": "\"Portanto, submetam-se a Deus. Resistam ao Diabo, e ele fugirá de vocês\". Tiago 4:7",
+        "dias": {
+          "dia_1": {
+            "referencia": "Tiago 4:1-3",
+            "tema": "Conflitos Relacionais",
+            "perguntas": [
+              "1. O que Tiago disse ser a fonte de conflito nos relacionamentos?",
+              "2. Como os desejos podem destruir relacionamentos?",
+              "3. Quais razões Tiago deu para não termos as coisas que desejamos?"
+            ]
+          },
+          "dia_2": {
+            "referencia": "Tiago 4:4-6",
+            "tema": "Amigos do Mundo",
+            "perguntas": [
+              "4. Como a amizade com o mundo afeta nosso relacionamento com Deus?",
+              "5. Por que você acha que é impossível ser amigo do mundo e de Deus ao mesmo tempo?",
+              "6. Como o orgulho e a humildade afetam o relacionamento de uma pessoa com Deus? Você já experimentou os efeitos do orgulho ou da humildade em seu próprio relacionamento com Deus? Explique."
+            ]
+          },
+          "dia_3": {
+            "referencia": "Tiago 4:7-10",
+            "tema": "Submeter e Resistir",
+            "perguntas": [
+              "7. Qual resposta a Deus 4:7 ordena?",
+              "8. Quais são algumas maneiras práticas de obedecer ao mandamento de 'resistir ao diabo'?",
+              "9. Quais respostas para Deus 4:8-10 ordenam? Em suas próprias palavras, descreva cada uma delas.",
+              "10. Qual dos comandos em 4:7-10 é mais significativo para você agora? Por quê?"
+            ]
+          },
+          "dia_4": {
+            "referencia": "Tiago 4:11-12",
+            "tema": "Julgando os Outros",
+            "perguntas": [
+              "11. When falamos uns contra os outros, o que Tiago disse que estamos realmente fazendo?",
+              "12. Se criticarmos a lei, o que isso diz sobre o que pensamos do legislador?",
+              "13. Como uma atitude adequada em relação a Deus nos ajuda a ter uma atitude adequada em relação aos outros?"
+            ]
+          },
+          "dia_5": {
+            "referencia": "Tiago 4:13-17",
+            "tema": "Vangloriando-se do Futuro",
+            "perguntas": [
+              "14. Quais atitudes contrastantes sobre o futuro Tiago descreveu?",
+              "15. As Escrituras não proíbem fazer planos. Mas o que devemos sempre lembrar quando fazemos nossos planos?",
+              "16. Como humanos finitos, há muito que não podemos saber. Mas Tiago disse que há algumas coisas que sabemos e devemos planejar fazer. O que deveríamos fazer? Qual é o resultado se não o fizermos?"
+            ]
+          },
+          "dia_6": {
+            "referencia": "Encontro",
+            "tema": "Participe do Grupo",
+            "perguntas": []
+          }
+        },
+        "devocionais_e_comentarios": {
+          "aprenda_a_verdade": "Pense nos seus desejos. Salmos 37:4 nos assegura que há bons desejos. Se nos deleitarmos no Senhor, Ele atenderá aos desejos de nossos corações. Mas Tiago deixa claro que também há desejos egoístas e ímpios desejos que nos levam a cobiçar, brigar e até mesmo assassinar. Esta semana, peça a Deus que o ajude a notar as coisas que você deseja. Elas são para a glória de Deus e para o bem dos outros? Ou elas são egoístas? Peça a Deus para transformar seus desejos mundanos em piedosos. Peça-Lhe para realizar esses desejos piedosos. Esteja preparado para compartilhar com seu grupo.",
+          "pratique_a_verdade": "O diabo tenta nos tentar de muitas maneiras diferentes. Ele nos tenta à cobiça e ao orgulho, à luta e à briga. Ele nos tenta a tentar controlar nosso próprio futuro. Ele nos tenta a pecar por não fazer as coisas que sabemos que devemos. Mas Deus diz que podemos fazer o diabo fugir de nós. Como? Nos submetendo a Deus e resistindo às mentiras do diabo. Peça a Deus para torná-lo consciente das várias maneiras pelas quais o inimigo o tenta. Então, quando uma tentação vem, diga audivelmente: 'Eu pertenço a Jesus! Eu resisto ao diabo e me submeto a Ti, Deus - faça o diabo fugir de mi!' Que diferença isso traz na maneira como você lida com a tentação?",
+          "personalize_a_verdade": "'Aproxime-se de Deus e Ele se aproximará de você'. O Deus que criou o universo e o sustenta todos os dias se aproximará de nós se nos aproximarmos dEle. Que convite incrível! Então, como você se aproxima de Deus? Tiago oferece algumas maneiras claras. Humilhai-vos diante de Deus. Purifiquem seus corações. Dê sua amizade e lealdade a Deus. Quando você vem a Deus com humildade e O adora de todo o coração, você está se aproximando dEle. Quando você lê Sua Palavra e deixa Sua verdade purificar seu coração, você está se aproximando de Deus. De que maneira você pode praticar se aproximar de Deus todos os dias desta semana? Se você se aproximar dEle, Ele promete se aproximar de você.",
+          "comentario_integral": {
+            "conflitos_relacionais_fe_e_luta": "Brigas, desavenças, paixões, guerra, assassinato - Tiago usou linguagem forte para descrever relacionamentos problemáticos. Suas palavras nos ajudam a imaginar a consternação que Deus deve sentir quando vê Seu povo brigando entre si. Tiago identificou pelo menos uma razão pela qual as pessoas brigam: porque elas não conseguem o que querem. As nações lutam entre si porque cobiçam território ou poder econômico. Como indivíduos, invejamos e desejamos posses, poder e reconhecimento. Tiago responde a esses conflitos dizendo: 'Você não tem, porque você não pede'. Somos convocados a pedir. No grego original, Tiago não especificou a quem devemos pedir. Muitos intérpretes acham que ele quis dizer que devemos pedir a Deus - e certamente devemos orar pelo que desejamos. Deus é um doador, não um detentor (Salmos 84:11). Então, em vez de lutar pelo que queremos, precisamos pedir a Ele. Por outro lado, Tiago queria dizer que, em vez de cobiçar e brigar, deveríamos humildemente pedir um ao outro o que precisamos. Às vezes, o ressentimento e o conflito podem ser evitados simplesmente com um pedido. Ou talvez Tiago quisesse dizer ambos - devemos orar e humildemente fazer pedidos um ao outro. Independentemente disso, Tiago enfatizou que nossos motivos não devem ser egocêntricos. Se não recebermos o que pedimos, pode ser porque estamos pedindo egoisticamente. Pense nisto... por que pedir às vezes é difícil. É preciso humildade para pedir o que precisamos ou desejamos. Quer peçamos a outra pessoa ou a Deus, pedir significa colocar nossas necessidades à mercê de outra pessoa. Quando pedimos não manipulamos para conseguir o que queremos. Não exigimos o que achamos que merecemos. E nós certamente não brigamos ou discutimos sobre isso. Simplesmente perguntamos. E então confiamos que Deus tem nossos melhores interesses no coração, e Ele nos dará o que é melhor para nós.",
+            "submeter_e_resistir": "Quando desejos egocêntricos nos governam, nos tornamos muito amigáveis com o mundo. Tiago chamou esse comportamento de 'adúltero' porque é infiel ao Senhor. Essa comparação era familiar aos leitores judeus de Tiago que conheciam os ensinamentos dos profetas. Através de Jeremias, Deus comparou Seu povo infiel a uma esposa infiel (veja Jeremias 3:20). Através do profeta Oséias, Deus disse a Israel: 'você se prostituiu, abandonando o seu Deus' (veja Oséias 9:1). Enfrentamos a mesma tentação que Israel enfrentou nos dias dos profetas: escolher entre Deus e o mundo (veja Mateus 6:24 e 1 João 2:15-16). Tiago relembrou aos seus leitores que Deus ama Seu povo com um amor feroz e ciumento. Ele quer que eles sejam inteiramente Seus. Em seguida, Tiago escreveu palavras mais suaves: 'Mas ele nos concede graça maior'. Nosso Deus zeloso também é cheio de graça e misericórdia. Ele é amoroso e generoso. Ele sempre oferece 'graça maior'. E Sua graça é 'suficiente' para qualquer luta que enfrentamos (veja 2 Coríntios 12:9). A humildade é necessária, no entanto, para receber essa graça. Temos que admitir nossa necessidade. Pessoas orgulhosas preferem acreditar que não precisam de nada. Eles resistem ao dom da graça de Deus, e assim Deus resiste ou se opõe a eles. Como são as pessoas humildes? Primeiro, eles se submetem ao seu Criador. Eles sabem que seu amoroso Pai também é o Senhor do universo. Eles sabem que pertencem à Sua autoridade. Os humildes também sabem que colocar-se sob o governo de Deus significa recusar-se a dar ao diabo, Seu inimigo, qualquer autoridade em suas vidas. Tanto Paulo quanto Pedro ecoaram as instruções de Tiago para 'resistir ao diabo' (veja Efésios 6:11, 1 Pedro 5:6-9). Quando estamos firmes contra o diabo, Deus faz com que o diabo fuja de nós. Além de se submeter a Deus, pessoas humildes se aproximam dEle. No Antigo Testamento, somente o sumo sacerdote podia se aproximar de Deus, e somente depois de completar a preparação complicada e os ritos. Por meio de Jesus Cristo, no entanto, todos os cristãos podem se aproximar dEle (veja Romanos 5:1-2; Hebreus 7:19). E quando o fizermos, Tiago disse que Deus se aproximará de nós! O Senhor promete Sua presença às pessoas humildes que reconhecem sua necessidade por Ele. Tiago resumiu esta seção com instruções de como demonstrar que levamos o pecado a sério. Devemos limpar nossas mãos, purificar nossos corações e lamentar por nosso orgulho e incerteza. Quando nos humilhamos diante do Senhor desta maneira, Tiago assegurou que Deus nos exaltará. Suas palavras nos lembram de Jesus, que se humilhou até o ponto da morte e agora é exaltado no céu e na terra (veja Filipenses 2:5-9).",
+            "o_problema_da_calunia_e_da_ostentacao": "Tiago aconselhou seus leitores a não falarem mal uns dos outros. Tal discurso, também chamado de 'calúnia', destina-se a prejudicar a reputação de uma pessoa. Tiago associou calúnia com julgamento. Um coração não pode ser humilde e crítico. Quando falamos mal e julgamos um irmão ou irmã em Cristo, também estamos falando contra e julgando a Lei de Deus. Quando julgamos a Lei decidindo que certas partes não se aplicam a nós, julgamos o Legislador. Tal comportamento é o oposto de nos humilhar diante de Deus. Outro comportamento que revela uma falta de humildade e submissão é fazer planos sem reconhecer que dependemos de Deus. Podemos dizer que acreditamos em Deus, mas planejamos nossas vidas sem reconhecer que somente Ele tem controle sobre nossos futuros. Quando agimos dessa maneira independente, podemos não nos sentir como se estivéssemos resistindo a Deus, mas ainda estamos O ignorando. Pense nisto... por que fazemos planos. O planejamento não é inerentemente ruim. As pessoas fazem planos para prover e proteger as pessoas com quem se importam. Mas o planejamento às vezes pode ser motivado por um esforço para controlar. Às vezes planejamos na tentativa de evitar dificuldades ou dor. Às vezes planejamos promover nossos próprios interesses, sem nos preocuparmos com Deus ou com os outros. A melhor maneira de fazer planos é fazê-los com Deus. Qual é o melhor interesse dEle? O que Ele quer para você e para os outros? Tiago exortou os cristãos a reconhecer que Deus decide sobre o futuro e nós não. Ao fazer planos, devemos sempre lembrar que é Ele que decide o que acontece. Isso não significa que devemos negligenciar os preparativos ou as responsabilidades. Isso significa que mantemos nossos planos abertos a Deus. Escolhemos humildade em vez de autoconfiança porque não sabemos o que o futuro trará - mas Deus sabe. No último versículo desta seção, Tiago parecia dizer: 'Now que você sabe como é importante colocar Deus em primeiro lugar, você não tem desculpas. Faça isso, ou é pecado'. Tendemos a pensar no pecado apenas como aquelas coisas que fizemos de erro. Tiago queria que eles soubessem que o pecado não é apenas fazer o que não devemos, mas também não fazer o que devemos."
+          }
+        }
+      },
+      "licao_6": {
+        "numero": 6,
+        "titulo": "Fé e Prática",
+        "referencia_geral": "Tiago 5",
+        "memorize_a_verdade": "\"Portanto, irmãos, sejam pacientes até a vinda do Senhor. Vejam como o agricultor aguarda que a terra produza a preciosa colheita e como espera com paciência até virem as chuvas do outono e da primavera\" Tiago 5:7",
+        "dias": {
+          "dia_1": {
+            "referencia": "Tiago 5:1-6",
+            "tema": "A Advertência aos Ricos",
+            "perguntas": [
+              "1. Tiago disse que problemas esperam certas pessoas ricas. O que essas pessoas ricas fizeram para merecer um futuro conturbado?",
+              "2. Como Tiago contrastava o que os ricos estavam desfrutando e o que seus funcionários estavam suportando?",
+              "3. Qual encorajamento uma pessoa oprimida poderia encontrar em 5:4?",
+              "4. O apóstolo Paulo escreveu que Jesus 'sendo rico, se fez pobre por amor de vocês, para que por meio de sua pobreza vocês se tornassem ricos' 2 Coríntios 8:9. Como podemos seguir o exemplo de Jesus independentemente de sermos ricos ou pobres?"
+            ]
+          },
+          "dia_2": {
+            "referencia": "Tiago 5:7-11",
+            "tema": "Almejado: Paciência",
+            "perguntas": [
+              "5. O que Tiago instou seus leitores a esperar pacientemente? Por que eles poderiam ter sido tentados a ser impacientes?",
+              "6. Quais são algumas maneiras que os agricultores demonstram paciência?",
+              "7. De 5:8-9, que ação positiva Tiago nos estimula a ter enquanto esperamos o retorno do Senhor? Contra qual atitude negativa ele nos advertiu? Qual destas é mais desafiadora para você?"
+            ]
+          },
+          "dia_3": {
+            "referencia": "Tiago 5:12",
+            "tema": "O Mandamento Contra Juramentos",
+            "perguntas": [
+              "8. Que tipo de discurso Tiago proibiu? Você pode pensar em um exemplo desse tipo de discurso?",
+              "9. Como nosso testemunho cristão poderia ser prejudicado quando não fazemos o que prometemos fazer?"
+            ]
+          },
+          "dia_4": {
+            "referencia": "Tiago 5:13-18",
+            "tema": "Instruções sobre Oração",
+            "perguntas": [
+              "10. Quais circunstâncias diferentes Tiago mencionou e o que ele disse para fazer em cada uma?",
+              "11. Se um cristão está doente e quer orar, quais passos Tiago lhe disse para tomar?",
+              "12. Elias era um profeta no Antigo Testamento. Como o exemplo dele o encoraja? Como o desafia?"
+            ]
+          },
+          "dia_5": {
+            "referencia": "Tiago 5:19-20",
+            "tema": "O Perdido",
+            "perguntas": [
+              "13. Qual Tiago disse ser a nossa responsabilidade para com aqueles que se afastam da verdade?",
+              "14. O que pode levar alguém a se perder, de acordo com Tiago?",
+              "15. O que a preocupação de Deus com a pessoa que se desviou da verdade o diz sobre o caráter de Deus?"
+            ]
+          },
+          "dia_6": {
+            "referencia": "Encontro",
+            "tema": "Participe do Grupo",
+            "perguntas": []
+          }
+        },
+        "devocionais_e_comentarios": {
+          "aprenda_a_verdade": "Tiago adverte fortemente aqueles que ganham suas riquezas enganando os outros. Todas as posses que acumularam apodrecerão. O povo que eles oprimiram gritará, e Deus os ouvirá. Existe uma área da sua vida em que você está se aproveitando de alguém para seu ganho pessoal? O que você pode fazer para consertar isso? Se você foi oprimido, fale com Deus sobre sua situação. Ele ouve seus gritos e pode ajudá-lo.",
+          "pratique_a_verdade": "A impaciência assume muitas formas. Podemos ser impacientes com os familiares quando eles repetem os mesmos erros. Podemos ser impacientes com os amigos quando eles nos desapontam. Podemos ser impacientes com circunstâncias difíceis. Em que áreas você luta para ser paciente? Nesta semana, quando a impaciência começar a crescer, pergunte-se: O que o agricultor faria? O que Jó faria? O que o Senhor 'compassivo e misericordioso' faria? Compartilhe com seu grupo.",
+          "personalize_a_verdade": "Quando Tiago disse para confessarmos nossos pecados um ao outro, ele não estava desprezando o fato de que Jesus é aquele que perdoa nossos pecados. 'Se confessarmos os nossos pecados, ele é fiel e justo para perdoar os nossos pecados e nos purificar de toda injustiça' (1 João 1:9). Então, porque Tiago nos diria para confessarmos nossos pecados uns aos outros? Às vezes, compartilhar nossos fracassos com outro cristão nos ajuda a receber melhor a graça e a ajuda de Deus. Quando caminhamos na Luz confessando humildemente nossos pecados, esses pecados não têm o mesmo poder sobre nós como antes. Às vezes, precisamos ouvir alguém dizer: 'Jesus morreu por esse pecado, Ele te perdou'. Você ainda carrega um fardo de vergonha e culpa por algum pecado que já pediu a Deus para perdoar? Talvez você precisa confessar esse pecado a um amigo cristão de confiança. Reflita: Jesus quer libertá-lo e restaurá-lo.",
+          "comentario_integral": {
+            "os_riscos_da_riqueza_fe_e_pratica": "Tiago novamente argumenta problemas entre ricos e pobres. Anteriormente, Tiago havia advertido os cristãos contra dar favoritismo aos ricos e discriminar os pobres (2:1-7). Agora, Tiago alertou os ricos. Não fique rico tirando proveito dos pobres e indefesos. Pessoas privilegiadas podem ter uma vida autoindulgente agora, mas o julgamento virá. Eles podem ter acumulado tesouros, mas esses tesouros não durarão. Sempre houve um problema com pessoas ricas ficando ricas enganando seus funcionários. Em vez de pagar um salário justo, eles retêm o que é devido ao trabalhador. No Antigo Testamento, Levítico 19:13 ordenou aos empregadores que pagassem diariamente aos seus trabalhadores contratados. Eles não deveriam se atrasar nem um dia sequer. Os trabalhadores dependiam dos salários diários para comprarem suas necessidades básicas, como alimentos. Tiago queria que os ricos soubessem que o clamor dos pobres havia chegado aos ouvidos do Senhor.",
+            "paciencia_e_firmeza": "Para aqueles que foram oprimidos, Tiago escreveu: 'Sejam pacientes'. Quando os agricultores plantam, devem esperar pacientemente, mas sabem que a colheita está chegando. Da mesma forma, os cristãos sabem que outra colheita está chegando. O Senhor um dia voltará e estabelecerá um reino onde a justiça e a misericórdia reinarão. Pense nisto... na paciência ativa. Esperar é diferente de ficar ocioso (veja 2 Tessalonicenses 3:6-12). Jesus disse aos Seus discípulos para trabalhar 'enquanto é dia' (João 9:4). Paulo trabalhou 'noite e dia' (2 Tessalonicenses 3:8). O agricultor diligente é um exemplo perfeito de paciência ativa. Mesmo enquanto espera pela chuva, o agricultor permanece ocupado com ervas daninhas e cultivo de campos, cuidando de animais e reparando equipamentos. Na mesma forma, Jesus nos convidou a participar de Sua colheita (veja João 4:35; Mateus 28:19-20) enquanto esperamos que Ele volte. Espere pacientemente, sim, mas também espere ativamente. Tiago exortou seus leitores a fortalecerem seus corações porque a vinda do Senhor está próxima. A palavra grega que Tiago usou para a 'vinda' do Senhor significa literalmente 'presença'. A palavra também foi usada por Jesus (veja Mateus 24:27, 37, 39), Paulo (veja 1 Coríntios 15:23; 1 Tessalonicenses 2:19, 3:13), Pedro (veja 2 Pedro 1:16, 3:4) e João (veja 1 João 2:28) para se referir à segunda vinda de Jesus. Este ensinamento sobre o retorno de Jesus foi o assunto mais estimado dos primeiros cristãos que enfrentaram intensa perseguição e outras dificuldades. Tiago apontou para os profetas que sofreram muito. Ele então lembrou seus leitores de Jó, cuja história é contada no Antigo Testamento. Jó permaneceu firme durante as provações terríveis. Ele nunca viu o propósito de Deus para o seu sofrimento. No final, Jó viu a compaixão e a misericórdia de Deus à medida que suas perdas foram restauradas (veja Jó 42:12). No entanto, he esperou muito tempo para ver Deus trabalhar ao seu favor. Com a palavra 'Sobretudo', Tiago mudou de assunto. Ele ordenou aos cristãos que não jurassem. A palavra 'jurar' aqui significa fazer uma promessa solene. Tiago ecoou as palavras de Jesus em Mateus 5: 'Não jurem de forma alguma... Seja o seu 'sim', 'sim', e o seu 'não', 'não (34, 37). É importante que os cristãos sejam conhecidos como pessoas que dizem o que pretendem dizer e fazem o que dizem que farão.",
+            "poder_de_oracao": "Tiago encorajou seus leitores a falarem com Deus o tempo todo. Quando sofrem, os cristãos podem falar com Deus e buscar a Sua ajuda. Quando alegres, podem louvar a Deus cantando (veja Efésios 5:19). Quando doentes, devem chamar os anciãos da igreja para virem orar por eles e ungi-los com óleo. Tiago disse que quando as pessoas orarem 'a oração da fé', aqueles que estão doentes serão salvos. Várias coisas são importantes destacar aqui. Primeiro, Tiago não explicou exatamente o que 'a oração da fé' significa. Sabemos, no entanto, que nossa fé deve estar na pessoa e no caráter de Deus, não nos resultados que esperamos. Em segundo lugar, Tiago enfatizou o papel dos presbiteros, não o do indivíduo. Em nenhum lugar Tiago sugeriu que a cura depende da pessoa doente orando com grande fé. Finalmente, observe a palavra que Tiago usou para 'salvar'. A palavra grega que ele usou tem um significado amplo que abrange as ideias de cura, salvação espiritual, libertação e muito mais. A passagem parece abordar tanto o bem-estar fisico quanto o espiritual de uma pessoa. Tiago disse que o Senhor iria levantar a pessoa doente. E se essa pessoa tivesse pecado, Deus o perdoaria. Tiago então encorajou os cristãos a confessarem seus pecados uns aos outros e orar uns pelos outros. Esta é uma prática importante para todos os cristãos, doentes ou saudáveis. Tiago usou o profeta do Antigo Testamento Elias como exemplo. Elias era uma 'pessoa justa' cuja orações tinham 'grande poder' (veja 1 Reis 17-18). Embora ele fosse um homem comum, ele orou grandes orações e Deus respondeu às orações com Seu grande poder. Pense nisto... no que Tiago quis dizer com uma 'pessoa justa' tendo orações poderosas. Intergridade não significa a ausência de pecado. Tiago tinha acabado de descrever a necessidade de confessar pecados. O pecado pode afetar nossa vida de oração, especialmente quando deixamos uma atitude pecaminosa nos convencer de que não podemos nos aproximar de Deus para pedir ajuda. Mas quando confessamos nossos pecados para Jesus, Ele os leva embora. Deus nos vê como justos (2 Coríntios 5:21). Então aproxime-se de seu Pai com convicção. Deus acolhe sua presença e suas orações com os braços abertos.",
+            "o_irmao_perdido": "Enquanto Tiago ensinou aos doentes a pedir ajuda, ele reconhecia que outro grupo de pessoas que precisava de ajuda provavelmente não o pediria. 'Meus irmãos', escreveu ele, 'se algum de vocês se desviar da verdade e alguém o trouxer de volta, lembrem-se disto: Quem converte um pecador do erro do seu caminho salvará a vida dessa pessoa e fará que muitíssimos pecados sejam perdoados'. Pessoas que estão fisicamente doentes sabem que precisam de ajuda. Mas as pessoas que estão espiritualmente doentes nem sempre estão cientes de sua necessidade. Eles podem até ser hostis com aqueles que tentam ajudá-los. Embora nossa ajuda nem sempre seja recebida, Tiago insistiu que devemos tentar ajudar. Os cristãos são chamados a serem a luz do mundo e o sal da terra (veja Mateus 5:13-16). Sua tarefa é ajudar aqueles que estão desesperançados a entender a salvação de Deus. Talvez essa fosse a motivação do apelo de Tiago para expressar sua fé na prática. Então o mundo pagão poderia ver o poder de Deus na prática. Tiago queria que ajudássemos os perdidos a encontrar Deus."
+          }
+        }
+      }
+    }
+  },
+  "filipenses": {
+    "nivel": 4,
+    "nome_livro": "Estudos Bíblicos em Comunidade - Filipenses",
+    "licoes": {
+      "licao_1": {
+        "numero": 1,
+        "titulo": "Alegre-se!",
+        "referencia_geral": "Filipenses 1:1-2",
+        "conteudo_integral": {
+          "introducao": "A carta que Paulo escreveu aos filipenses, enquanto estava preso, é toda sobre alegria. Isso é incrível quando se considera que ele era um prisioneiro quando escreveu para seus amigos em Filipos. Apesar de ser um prisioneiro, Paulo encontrou alegria no Senhor. Isso era possível porque sua alegria dependia de Jesus, e não de suas circunstâncias. A mesma alegria é possível para nós, não importa o quão difícil nossas circunstâncias possam ser. Nesta carta, Paulo explica um segredo importante para viver a vida cristă: para viver bem esta vida, precisamos ter \"a mente de Cristo.\" Quando temos \"a mente de Cristo,\" dependemos dEle como nossa fonte de força e alegria para que também possamos viver com alegria e vitória em vez de tristeza e derrota.",
+          "o_autor": "Paulo escreveu este livro aos cristãos que viviam em Filipos, que eram seus parceiros em compartilhar o evangelho. Deus escolheu Paulo para levar as boas novas sobre Jesus aos gentios. Paulo era um judeu com treinamento religioso especial, mas não foi sua educação que mudou sua vida. Foi seu encontro pessoal com Jesus (Atos 9) que mudou sua vida para sempre. Jesus se revelou de maneira muito pessoal e dramática a Paulo. Ele então o chamou para contar aos gentios sobre as boas novas. Com grande custo físico, financeiro e emocional, Paulo viajou pelo mundo de sua época pregando as boas novas.",
+          "data": "Muitos estudiosos acreditam que Paulo escreveu Filipenses por volta de 60 d.C. Paulo era prisioneiro em Roma e havia sido preso por causa de sua fé em Jesus. Ele aguardava julgamento perante César, que tinha o poder de matá-lo. Paulo não sabia o que seu futuro reservava. No entanto, ele viveu sua vida com alegria.",
+          "a_historia_de_paulo_com_os_filipenses": "Paulo partiu em três viagens missionárias pregando as boas novas. Na segunda viagem, Paulo e seus companheiros viajaram ao longo da costa leste do Mediterrâneo. Eles encontraram Timóteo na cidade de Listra (Atos 16:1-3), e ele se juntou a eles em sua jornada. Eles haviam planejado viajar para a Ásia Menor (a porção asiática da Turquia), mas Deus os redirecionou. Ele deu a Paulo uma visão de um homem macedônio que lhe implorou, \"Passe à Macedônia e ajude-nos\" (Atos 16:9). Então Paulo e seus companheiros navegaram para Filipos. A colônia romana de Filipos (Atos 16:12) era um centro comercial localizado no norte da Macedônia (atual Grécia). Filipos estava localizado na rota comercial que ligava o Oriente e o Ocidente. No sábado, Paulo e seus amigos saíram para a beira do rio. Algumas mulheres se reuniram lá para orar, incluindo Lídia, uma empresária bem-sucedida. Ela e sua família se tornaram uns dos primeiros seguidores de Jesus em Filipos. Ao contrário da cultura da época, as mulheres eram proeminentes na igreja primitiva. Paulo os aceitou ansiosamente como companheiros de trabalho no reino. Ele elevou e dignificou a posição deles. Enquanto vivia em Filipos, Paulo expulsou um demônio de uma escrava grega. Ela havia feito muito dinheiro para seus donos adivinhando o futuro. Sem o demônio, ela não tinha poder. Seus donos ficaram zangados com Paulo e o arrastaram diante dos magistrados (Atos 16:19-24). Paulo e Silas foram severamente espancados e presos. À meia-noite, embora externamente seus pés estivessem presos no tronco, eles foram fortalecidos interiormente pela oração. Mesmo nesta situação terrível, eles experimentaram alegria no Senhor e a expressaram cantando hinos. Pense nisto... o que Deus pode fazer quando oramos. Paulo e Silas vivenciaram grande sofrimento físico por causa de Cristo. Mas em vez de sentir pena de si mesmos e reclamar, eles oraram. Quando eles intencionalmente entregaram suas ansiedades a Deus, Ele os encheu com Sua paz, \"que excede todo o entendimento\" (Filipenses 4:7). Em vez de ficar desanimado e deprimido, Deus sobrenaturalmente permitiu que Paulo e Silas se regozijassem. Ele pode fazer a mesma coisa por você quando você entrega a Ele seus problemas e preocupações. De repente, um terremoto sacudiu a prisão e os libertou. O carcereiro estava prestes a se matar porque sabia que os romanos o matariam se algum prisioneiro escapasse. Mas Paulo assegurou-lhe que todos os prisioneiros ainda estavam lá. O carcereiro conversou com Paulo, e antes do amanhecer, ele e toda a sua família haviam se tornado cristãos e foram batizados. Paulo e Silas foram convidados para sua casa, onde comeram e adoraram juntos. Os magistrados soltaram Paulo e Silas e pediram a eles que deixassem a cidade. Depois de uma visita à casa de Lídia para encorajar os novos cristãos, eles partiram e foram para Tessalônica. Paulo permaneceu próximo da igreja em Filipos. Durante sua longa estadia em Éfeso, ele enviou Timóteo para as igrejas da Macedônia. Atos 20:1-2 relata que Paulo visitou essas igrejas, incluindo a de Filipos, a caminho de Corinto. Ele mais tarde visitou Filipos novamente e passou a Páscoa lá antes de sua última viagem a Jerusalém. Os Filipenses ocupavam um lugar especial no coração de Paulo. Lídia o havia recebido em sua casa. O carcereiro e sua família se alegraram com Paulo porque ele os ajudou a conhecer Jesus. Os Filipenses ajudaram Paulo quando ele estava em Tessalônica e durante sua prisão em Roma.",
+          "saudacoes_amistosas": "Paulo começou esta carta com o título \"servos.\" Ele e Timóteo pertenciam a Jesus. Jesus os comprou morrendo na cruz para pagar por seus pecados. Paulo dirigiu esta carta a \"todos os santos em Cristo Jesus que estão em Filipos\" (Filipenses 1:1). A palavra grega para \"santos\" vem da palavra sagrado. Significa separado para um propósito específico - neste caso, para o propósito específico de Deus. Pense nisto... como Paulo em suas outras cartas geralmente se apresentava como apóstolo. Mas, ao escrever aos Filipenses, ele usou a palavra grega \"servo\" ou \"escravo.\" Era uma palavra poderosa para os Filipenses que viviam em uma colônia romana. Eles entenderam o que significava ser recrutado para o serviço dos omanos. \"Servo\" ou \"escravo\"carregava conotações que implicavam humildade e submissão. Assim, quando Paulo chamou a si mesmo de servo de Jesus Cristo, os Filipenses puderam se relacionar com a posição que ele estava assumindo. Ele e Timóteo foram recrutados para o serviço de Jesus Cristo - não pela força, mas em um compromisso voluntário e sincero com seu Senhor. A saudação de Paulo aos cristãos Filipenses era uma que ele usava com frequência: \"A vocês, graça e paz da parte de Deus nosso Pai e do Senhor Jesus Cristo\" (1:2). A palavra grega para \"graça\" significa bondade e favor imerecido. A palavra para \"paz\" implica integridade e solidez do coração e da mente. A ideia bíblica de paz é mais do que a ausência de guerra. Sugere bem-estar interior, independentemente das nossas circunstâncias. Deus em Sua graça dá Seu poder para que os cristãos possam viver vidas significativas e alegres em harmonia com Ele e com os outros.",
+          "personalize_a_verdade": "Mesmo na prisão, Paulo estava cheio da alegria encontrada apenas em Cristo. Muitas vezes é tentador pensar que seríamos mais alegres se nossas circunstâncias fossem diferentes. Mas Paulo nos mostra que a verdadeira alegria é uma questão de deleitar-se em Cristo e não é dependente de condições externas. Existem \"prisões\" em sua vida - quaisquer circunstâncias, pressões, responsabilidades, hábitos nos quais você se sinta preso ou gostaria de mudar? Como você acha que Paulo lidaria com a \"prisão\" que você está vivenciando? Onde ele encontraria alegria? Como você pode experenciar a alegria também?"
+        },
+        "dias": {}
+      },
+      "licao_2": {
+        "numero": 2,
+        "titulo": "O Testemunho de Paulo",
+        "referencia_geral": "Filipenses 1:3-30",
+        "memorize_a_verdade": "\"Estou convencido de que aquele que começou boa obra em vocês, vai completá-la até o dia de Cristo Jesus.\" Filipenses 1:6",
+        "dias": {
+          "dia_1": {
+            "referencia": "Filipenses 1:3-11",
+            "tema": "A Afeição e Oração de Paulo Pelos Filipenses",
+            "perguntas": [
+              "1. Por que Paulo agradeceu a Deus pelos Filipenses?",
+              "2. No versículo 6, do que Paulo tem certeza e como isso os encorajaria?",
+              "3. Que coisas específicas Paulo pediu em oração pelos cristãos nos versículos 9-11?",
+              "4. O que você acha que significa o amor crescer em conhecimento e discernimento?"
+            ]
+          },
+          "dia_2": {
+            "referencia": "Filipenses 1:12-14",
+            "tema": "O Caminho do Evangelismo de Paulo",
+            "perguntas": [
+              "5. No que Paulo continuou a se concentrar enquanto estava na prisão (versículo 12)?",
+              "6. Que efeito a prisão de Paulo teve sobre os cristãos? Por que você acha que teve esse efeito?",
+              "7. Que provação em sua vida agora Deus poderia estar usando para o progresso do evangelho?"
+            ]
+          },
+          "dia_3": {
+            "referencia": "Filipenses 1:15-18",
+            "tema": "Motivos Para Pregar a Verdade",
+            "perguntas": [
+              "8. O que motivou os dois grupos diferentes pregando o evangelho?",
+              "9. Por que você acha que as pessoas pregariam por inveja e rivalidade?",
+              "10. Por que Paulo não ficou chateado com esses pregadores com motivos errados? Como a atitude de Paulo desafia você?"
+            ]
+          },
+          "dia_4": {
+            "referencia": "Filipenses 1:19-26",
+            "tema": "Vivendo Para Cristo",
+            "perguntas": [
+              "11. Com o que Paulo contava enquanto esperava por sua libertação?",
+              "12. Pelo que Paulo esperava ansiosamente e tinha esperança?",
+              "13. Que conflito Paulo estava sentindo? Por que isso era um conflito para ele?",
+              "14. Como ele resolveu esse conflito?",
+              "15. O que você acha que Paulo quis dizer quando disse, \"para mim o viver é Cristo\"? Você pode dizer a mesma coisa? Explique sua resposta."
+            ]
+          },
+          "dia_5": {
+            "referencia": "Filipenses 1:27-30",
+            "tema": "A Exortação de Paulo",
+            "perguntas": [
+              "16. Como Paulo queria que os cristãos Filipenses vivessem?",
+              "17. Você já enfrentou oposição ao evangelho? Como as palavras de Paulo podem encorajá-lo?",
+              "18. Paulo disse que o sofrimento viria, então como lutar lado a lado ajudaria os cristãos a permanecerem firmes?"
+            ]
+          },
+          "dia_6": {
+            "referencia": "Encontro",
+            "tema": "Participe do Grupo",
+            "perguntas": []
+          }
+        },
+        "devocionais_e_comentarios": {
+          "aprenda_a_verdade": "Como você descreveria os sentimentos de Paulo pelos Filipenses? Paulo ora por eles com alegria. Ele os guarda em seu coração e anseia por eles com o afeto de Cristo. Toda vez que se lembra deles, ele agradece a Deus por eles. Por seu amor e afeição, Paulo ora pelos Filipenses. Esta semana, enquanto você ora pelos outros, peça a Deus que lhe dê alegria e compaixão por eles. Ore com frequência ao se lembrar deles. Esteja ciente do que acontece em seu coração enquanto você ora. Esteja preparado para compartilhar sua experiência com seu grupo.",
+          "pratique_a_verdade": "Paulo foi capaz de experimentar e demonstrar uma atitude alegre mesmo na prisão, acorrentado aos guardas da prisão. Como ele poderia estar alegre? Porque sua alegria veio de seu relacionamento com Deus, não de sua situação de vida. Deus quer o mesmo para nós quando enfrentamos dificuldades. Qual área da sua vida é desafiadora agora? Ore e peça a Deus para ajudá-lo através do Seu Espírito para que você possa se alegrar enquanto espera com expectativa e esperança (1:19-20). Esteja preparado para compartilhar sua experiência com seu grupo.",
+          "comentario_integral": {
+            "uma_oracao_alegre": "Paulo orou com alegria pelos Filipenses por causa de sua parceria com ele em compartilhar o evangelho. Ele baseou sua alegria em suas experiências com eles e em sua confiança de que Deus continuaria a trabalhar neles e através deles. Ele confiou na boa obra de Deus em suas vidas. Paulo podia escrever orações alegres porque tinha aprendido a confiar em Deus. Pense nisto... a total confiança de Paulo em Deus. Viver a vida cristã é difícil às vezes! Mas Paulo podia dizer com certeza que o que Deus começa Ele termina. Se compartilharmos dessa certeza, então podemos confiar a Deus as nossas circunstâncias também. Desde o dia da nossa salvação, Deus começa a trabalhar, e Ele nunca desiste de nós. Embora possamos ser tentados a desistir às vezes, Deus não é um abdicador. Ele continuará trabalhando em nós até o dia em que Cristo voltar ou o dia em que Ele nos chamar para casa. Você pode confiar em Deus, independentemente de sua própria força, coragem ou capacidade, porque Ele está trabalhando em você. Paulo expressou terna afeição pelos Filipenses. Ele os guardava em seu coração. Eles tinham compartilhado a graça de Deus juntos, e ele ansiava por eles com a afeição de Jesus. Em 1:9-11, Paulo orou para que o amor de seus leitores continuasse crescendo, juntamente com o conhecimento e discernimento. O amor sem conhecimento e discernimento pode ser superficial. O conhecimento e o discernimento sem amor podem ser insensíveis e severos. Paulo queria que os Filipenses tivessem amor com discernimento. Ele queria que eles amassem e valorizassem as coisas que Deus ama e valoriza. Então, eles seriam capazes de distinguir entre o que era bom e o que não era. Esse discernimento lhes permitiria viver vidas puras e sem culpa. Os pedidos que Paulo fez a Deus para os Filipenses tinham a ver com o seu bem-estar espiritual. Embora os Filipenses tivessem necessidades fisicas e financeiras, ele se concentrou no que era mais importante suas necessidades espirituais.",
+            "o_plano_surpreendente_de_deus": "Em Atos, Lucas descreveu a prisão domiciliar de Paulo em Roma. Estudiosos acreditam que Paulo provavelmente escreveu aos Filipenses durante este tempo. Embora ele estivesse acorrentado a um guarda, Paulo ainda podia ter visitantes e compartilhar sobre Jesus (Atos 28:16, 30). O próprio Deus planejou a estratégia mais eficaz para Seu servo Paulo incluindo sua prisão, que na verdade o ajudou para \"o progresso do evangelho\" (Filipenses 1:12). Os guardas da prisão, que tinham grande influência entre pessoas de todos os níveis sociais, ouviram a pregação de Paulo diariamente por dois anos (Atos 28:30-31). Muitos deles se tornaram cristãos (Filipenses 4:22). A estratégia incomum de Deus também inspirou e fortaleceu os irmãos cristãos de Paulo. Eles cresceram em coragem e ousadamente pregaram o evangelho onde quer que estivessem.",
+            "discernimento_espiritual": "Paulo disse que sabia que algumas pessoas estavam pregando mais para irritá-lo do que para honrar a Cristo. Mas para ele o importante era que Cristo estava sendo pregado. Como ele poderia escrever tão calmamente sobre esses pregadores invejosos? Paulo reconheceu que sua ambição egoísta e rivalidade estavam erradas. No entanto, eles estavam pregando o mesmo evangelho que Paulo pregou (1:15-18). Ele permaneceu calmo porque sua principal preocupação era com a pureza da mensagem e não com os motivos de outras pessoas."
+          }
+        }
+      }
+    }
+  },
+  "colossenses": {
+    "nivel": 4,
+    "nome_livro": "Estudos Bíblicos em Comunidade - Colossenses",
+    "licoes": {
+      "licao_1": {
+        "numero": 1,
+        "titulo": "Jesus é o Senhor de Tudo",
+        "referencia_geral": "Colossenses 1",
+        "conteudo_integral": {
+          "introducao": "Colossenses é um pequeno livro escrito para uma igreja pequena em uma cidade de importância decrescente. Mas as verdades encontradas neste livro são enormes. O apóstolo Paulo escreveu esta carta a um grupo de cristãos que provavelmente tinham apenas alguns poucos anos em sua fé. Seu propósito era encorajá-los a se apegarem firmemente à palavra da verdade de Deus que lhes havia chegado. Ele queria inspirá-los a viver de uma forma que fosse coerente com a verdade em que acreditavam.",
+          "a_historia": "Durante uma das viagens missionárias de Paulo, ele passou alguns anos na cidade de Éfeso. Esta cidade estava localizada na atual Turquia. Foi provavelmente lá que um homem chamado Epafras ouviu o ensinamento de Paulo sobre Jesus e creu. Epafras viajou para a cidade de Colossos, a cerca de 200 quilômetros de distância. Ele disse às pessoas de lá o que tinha ouvido. Os cristãos da cidade criaram uma igreja. Eles logo se tornaram bem conhecidos pelo amor que demonstraram, semelhante ao de Cristo. A cidade de Colossos já foi uma parte importante da rota comercial entre a Pérsia e a costa do Mediterrâneo. Era também uma grande produtora de lã e tecido tingido. Mas uma nova estrada da Pérsia havia contornado a cidade, causando os negócios e as viagens a diminuírem. Para os cidadãos de Colossos, o futuro deve ter parecido extremamente incerto. Eles enfrentaram desastres econômicos, alto desemprego e o fardo da alta tributação. Neste tempo de medo e ceticismo, a carta de Paulo oferecia esperança através de Jesus. O povo nativo de Colossos era chamado de Frígios. Muitos gregos haviam se mudado para a região quando ela fazia parte do Império Grego. E na época da carta de Paulo, a cidade fazia parte do Império Romano por cerca de 200 anos. Uma grande população de judeus havia se mudado para lá para escapar das guerras em Israel. Eles logo adotaram muitos dos costumes dos gentios entre os quais viviam. Pense nisto... quem influencia quem. Como seguidores de Cristo, Deus nos chama a trazer Sua luz para nossas comunidades. Com o tempo, comunidades inteiras podem ser transformadas por causa da influência de alguns crentes fiéis que refletem Jesus em suas vidas cotidianas. Mas, infelizmente, é possível que, em vez de influenciar positivamente nossas comunidades para Cristo, alguns de nós deixaremos que nossas comunidades nos influenciem. Se não formos cuidadosos, podemos, como os judeus em Colossos, facilmente adquirir mentalidades e hábitos que nos impedem de crescer com Deus. Como sua comunidade influencia sua caminhada com Deus? Isso o desencoraja de alguma forma para viver sua fé? Você está influenciando as pessoas ao seu redor para Ele? Parece que Epafras havia contado a Paulo sobre falsos ensinamentos que ameaçavam a fé dos Colossenses em Jesus. Não sabemos exatamente o que esse falso ensinamento incluiu. Paulo não se dirigiu diretamente ao ensinamento quando escreveu sua carta. Ele preferiu lutar contra os erros, enfatizando as verdades fundamentais do cristianismo. Em resposta ao relatório de Epafras, Paulo escreveu o livro de Colossenses para corrigir os erros e manter os cristãos focados.",
+          "o_problema": "Os falsos mestres que estavam confundindo os Colossenses não estavam todos ensinando a mesma coisa. Alguns acreditavam que a salvação vinha através de conhecimento especial adquirido por magia. Eles ensinaram falsamente que apenas alguns \"conhecedores\" poderiam encontrar a verdade. Eles também ensinaram que toda a matéria era má. Isso levou alguns deles a se tornarem ascéticos evitando todo o prazer. Eles se puniram pelo que pensavam ser desejos físicos profanos. Outros foram na direção oposta e fizeram qualquer coisa que quisessem porque acreditavam que nada disso importava. Suas crenças os levaram à conclusão de que Deus não criou o mundo e que tinha pouco interesse nele. Apesar das diferentes maneiras como aplicavam suas crenças, esses falsos mestres compartilhavam uma visão importante em comum: o espírito era bom e a matéria era má. Essa crença os levou a um grave mal-entendido sobre Jesus. Eles pensavam que um Deus puro e santo nunca escolheria entrar na imperfeição e fraqueza de um corpo humano. Se sua visão fosse verdadeira, carne e espírito não poderiam ter sido combinados em Jesus, o único Deus-homem. Eles alegaram que era impossível para tal homem ser o Salvador, porque sua humanidade o tornaria pecaminoso. Então eles argumentaram que Jesus nunca poderia ter sido tanto Filho do Homem quanto Filho de Deus. E eles concluíram que Jesus não era realmente Deus. Havia também professores judeus, chamados Essênios, em Colossos. Os Essênios seguiram estritamente alguns aspectos da lei do Antigo Testamento. Mas eles haviam adicionado suas próprias interpretações extremas ao lado dos mandamentos de Deus. Eles até proibiram beber água no sábado. Enquanto isso, eles se desviaram para crenças idólatras. Eles adoravam o sol e os anjos e se recusaram a acreditar na ressurreição do corpo. Todas essas crenças confusas estavam fazendo com que os Colossenses se afastassem da verdade. Epafras contou a Paulo sobre a situação inquietante na igreja.",
+          "resposta_de_paulo": "Paulo ficou preocupado quando ouviu o que estava acontecendo em Colossos. Mas ele não podia visitar os cristãos em Colossos porque ele era um prisioneiro. Ele iria mencionar esta prisão na carta que ele escreveu para eles (veja Colossenses 4:3, 4:10, 4:18). Paulo provavelmente nunca tinha conhecido os Colossenses. Mas ele se importava profundamente com eles como companheiros da fé em Cristo. Ele também poderia se identificar com suas diversas origens culturais. Ele era judeu e tinha sido treinado por um rabino respeitado. Ele era um cidadão romano de nascimento e tinha crescido em Tarso, um centro da cultura grega.",
+          "o_tema_da_carta": "Para contrariar o falso ensinamento, Paulo estabeleceu Jesus como a imagem exata de Deus. Através de Jesus, todas as coisas foram criadas. Em Jesus \"foi do agrado de Deus que nele habitasse toda a plenitude\" (Colossenses 1:19). Paulo explicou que Cristo é sobre tudo e mantém tudo unido. E deixou claro que Cristo é plenamente humano com o \"corpo fisico de Cristo\" (Colossenses 1:22). Pense nisto... como Paulo combateu o erro. Ele optou por não debater diretamente o falso ensino. Ele não o desmiuçou ponto por ponto em um esforço para convencer seus leitores de seus erros. Em vez disso, a abordagem de Paulo era fortalecer os cristãos afirmando o que eles estavam fazendo de certo, orando por eles e, em seguida, dando um bom ensino sobre a divindade e preeminência de Jesus. Poderíamos ser mais eficazes em nossos esforços para \"batalhar pela fé\" (Judas 3) se encontrássemos maneiras de afirmar, orar e edificar outros fiéis ao ensinarmos a verdade? Veja como Paulo fez isso com os Colossenses. Peça a Deus que lhe dê sabedoria como a de Paulo para defender a verdade de uma maneira cativante. Paulo assegurou aos Colossenses que a verdade de Deus não é um segredo revelado a apenas alguns. Ele lembrou-lhes que só Cristo é a Cabeça, a realidade, a verdade. Quando conhecemos a Cristo, temos acesso a \"todos os tesouros da sabedoria e do conhecimento\"(Colossenses 2:3). Depois de ensinar a verdade sobre Cristo, Paulo explicou como essa verdade deveria afetar a vida diária dos cristãos. Assim que eles percebessem quem é Cristo, e quem eles são em Cristo, seus comportamentos deveriam refletir suas crenças.",
+          "personalize_a_verdade": "Paulo usou a verdade para combater a falsa doutrina que se espalhava pela igreja de Colossenses. Ele queria que os Colossenses conhecessem a Cristo o suficiente para escapar da ilusão e do cativeiro dos falsos ensinos. Como a abordagem de Paulo pode servir de modelo para nós hoje? Como você pode permanecer ancorado na verdade quando fica confuso sobre as idéias do mundo e se elas se encaixam no plano de Deus? Pense em algumas das verdades que o mantêm \"enraizados e edificados\" em Cristo\" (Colossenses 2:7). Peça ao Senhor para mantê-lo fundamentado nessas verdades sempre que você se deparar com falsos ensinamentos."
+        },
+        "dias": {}
+      },
+      "licao_2": {
+        "numero": 2,
+        "titulo": "O Povo de Cristo",
+        "referencia_geral": "Colossenses 1:1-14",
+        "memorize_a_verdade": "\"Pois ele nos resgatou do domínio das trevas e nos transportou para o Reino do seu Filho amado, em quem temos a redenção, a saber, o perdão dos pecados.\" Colossenses 1:13-14",
+        "dias": {
+          "dia_1": {
+            "referencia": "Colossenses 1:1-2",
+            "tema": "O Povo Santo de Deus",
+            "perguntas": [
+              "1. De acordo com esses versículos, quem escreveu a carta aos Colossenses, e o que você aprende sobre ele?",
+              "2. A quem esta carta foi dirigida, e a partir destes versículos, o que você sabe sobre eles?",
+              "3. Considere neste momento o que você aprendeu na Lição 1 sobre as circunstâncias da igreja Colossense. Por que os cristãos Colossenses precisavam da graça e da paz paz de Deus?"
+            ]
+          },
+          "dia_2": {
+            "referencia": "Colossenses 1:3-8",
+            "tema": "A Boa Nova se espalha",
+            "perguntas": [
+              "4. Com base nesses versículos, dê uma breve descrição dos cristãos Colossenses em suas próprias palavras.",
+              "5. Você diria que os Colossenses estavam indo bem espiritualmente? Explique sua resposta.",
+              "6. De quem os Colossenses ouviram pela primeira vez o evangelho? Como Paulo o descreveu?",
+              "7. Como você tem visto o evangelho dando frutos em: a. lugares distantes? b. sua comunidade? c. sua própria vida?"
+            ]
+          },
+          "dia_3": {
+            "referencia": "Colossenses 1:9",
+            "tema": "Conhecendo a Vontade de Deus",
+            "perguntas": [
+              "8. Revise a passagem de ontem ao lado do versículo de hoje. a. O que levou Paulo a orar pelos Colossenses? b. Você costuma orar por pessoas que estão indo bem ou pessoas que estão lutando de alguma forma? Por que é bom fazer as duas coisas?",
+              "9. Por que é importante conhecer a vontade de Deus? (Veja Romanos 12:2; 1 Tessalonicenses 4:3 e 5:18)."
+            ]
+          },
+          "dia_4": {
+            "referencia": "Colossenses 1:10-11",
+            "tema": "Agradar a Deus",
+            "perguntas": [
+              "10. A partir desta passagem, o que Paulo listou como indicadores de que uma pessoa está vivendo de maneira digna do Senhor e agradando-O?",
+              "11. Escolha um dos indicadores da pergunta 10 e dê um exemplo de como ele pode ser exercido na vida de uma pessoa.",
+              "12. De que forma a resistência e a paciência podem ajudar as pessoas a superar as dificuldades?",
+              "13. Como é possível ter alegria ao suportar algo dificil? (Veja Mateus 5:11-12; Romanos 5:3-4; 2 Coríntios 4:16-18; Tiago 1:2-3.)"
+            ]
+          },
+          "dia_5": {
+            "referencia": "Colossenses 1:12-14",
+            "tema": "Herdeiros do Reino de Deus",
+            "perguntas": [
+              "14. Paulo listou muitos beneficios que os Colossenses haviam recebido do Pai. Quais desses beneficios são especialmente significativos para você e por quê?",
+              "15. \"Redenção\" é o que acontece quando alguém paga o preço necessário para libertar um cativo. De acordo com esses versículos, por que precisávamos da redenção de Deus?",
+              "16. Existem apenas dois reinos, o reino das trevas e o reino da luz. A que reino você pertence? Como você sabe? (Veja João 8:12; Romanos 10:9-10.)"
+            ]
+          },
+          "dia_6": {
+            "referencia": "Encontro",
+            "tema": "Participe do Grupo",
+            "perguntas": []
+          }
+        },
+        "devocionais_e_comentarios": {
+          "aprenda_a_verdade": "Paulo lembrou aos Colossenses da esperança que os esperava no céu. Se você confiou em Jesus como seu Salvador, há esperança armazenada para você no céu também. Mas essa esperança não é apenas para quando você morrer, ela deve ter um efeito na maneira como você se sente, pensa e vive agora. Pense em como a esperança do céu afeta essas três áreas: relacionamentos, problemas e pensamentos sobre o futuro. Escolha um deles e planeje conversar com seu grupo sobre como a esperança do evangelho pode fazer uma diferença prática em sua vida agora.",
+          "pratique_a_verdade": "Pense nas pessoas e necessidades sobre as quais você costuma orar. Como o que você aprendeu com a oração de Paulo afetará a maneira como você ora sobre essas preocupações? Esteja preparado para compartilhar sua nova perspectiva com seu grupo.",
+          "comentario_integral": {
+            "introducao_e_saudacao_de_paulo": "Em sua introdução aos cristãos Colossenses, Paulo primeiro se identificou. Ele sabia exatamente quem e de quem ele era: um apóstolo, um mensageiro para Jesus. Então ele identificou sua audiência: \"santos Cristo\". Parece que ele queria que eles soubessem quem e de quem eram também. Eram pessoas que colocaram sua fé em Jesus e entenderam a graça de Deus. Paulo queria que eles vivessem sua identidade como cidadãos do reino do Filho amado de Deus. Paulo disse que havia sido escolhido \"pela vontade de Deus\". Ele queria que seus leitores soubessem que estavam lendo as palavras de Deus. Havia muitos falsos mestres e ensinamentos enganosos em Colossos neste momento. Mas os Colossenses podiam saber que as palavras de Paulo eram verdadeiras porque foram dadas a Paulo por Deus e se alinharam com a verdade de Deus. Paulo estava enviando um homem chamado Epafras para trazer sua carta aos cristãos em Colossos. Ele não podia ir porque estava preso. Epafras havia provado que estava comprometido com Deus e se importava com as necessidades do povo de Deus. Ele tinha visitado Paulo enquanto ele era um prisioneiro e contou-lhe sobre o que estava acontecendo na igreja Colossense. Epafras relatou várias coisas positivas sobre os Colossenses, e Paulo se referiu a essas coisas enquanto escrevia. Paulo estava escrevendo para pessoas com as quais ele se importava, e sua preocupação com elas é evidente na carta que ele escreveu. Logo, ele estaria dando-lhes correção e advertência. Mas ele teve o cuidado de começar apontando as maneiras pelas quais eles já estavam agradando a Deus. Ele os encorajou e os afirmou porque tinha ouvido coisas boas sobre eles. Eles haviam mostrado que seu compromisso com Jesus era genuíno. Sua fé e amor estavam fazendo a diferença no mundo ao redor deles, e Paulo agradeceu a Deus por isso. Embora os cristãos parecessem estar indo bem espiritualmente, Paulo sabia que Deus queria ainda mais para eles. Paulo tinha um relacionamento próximo com Deus e dependia constantemente dEle enquanto cumpria seu ministério. Então ele orou uma oração ousada por seus amigos em Colossos, confiando que Deus iria ajudá-los da mesma maneira. Deus é a fonte de tudo o que precisamos. Quando conhecemos a Sua vontade, somos capazes de agir com sabedoria e compreensão. Pense nisto... na oração de Paulo por seus amigos. Paulo já tinha ouvido notícias positivas sobre os cristãos Colossenses. Mas ele não hesitou em pedir a Deus para continuar ajudando e capacitando-os ainda mais. Deus se preocupa com o nosso bem-estar espiritual. Ele nos oferece sabedoria, conhecimento e compreensão para conhecê-Lo mais. Ele nos dá esperança e força para suportar com paciência e alegria. Ele nos acolhe para pedir essas coisas quando precisamos delas. E podemos orar para Ele dar esses dons às pessoas que amamos.",
+            "vidas_que_trazem_alegria_a_deus": "Parece que Epafras tinha ouvido a mensagem do evangelho de Paulo em Éfeso e depois voltou para casa para compartilhá-la com seus companheiros Colossenses. Depois de ter ouvido o evangelho de Epafras, os Colossenses \"entenderam a graça de Deus em toda a sua verdade\". O evangelho é \"a palavra da verdade\", a boa nova sobre Jesus Cristo, que é a Verdade (veja João 14:6). O plano de Deus para espalhar o evangelho é confiá-lo a pastores fiéis e outros cristãos que serão capazes de ensinar os outros (veja 2 Timóteo 2:2). Desta forma, o evangelho literalmente pode se espalhar por todo o mundo. Paulo disse que sempre agradeceu a Deus pela esperança que os Colossenses tinham no céu. Esses cristãos sabiam que o céu era o seu verdadeiro lar. Por causa disso, eles viviam por valores diferentes. Eles poderiam perdoar em vez de retaliar, sabendo que Deus endireitaria tudo (veja Romanos 12:19). Eles poderiam dar e servir sacrificialmente, sabendo que Deus os viu e os recompensaria (veja Gálatas 6:9; Colossenses 3:23-24). Eles podiam suportar dificuldades sabendo que Deus estava com eles e resolveria as coisas eventualmente (veja Romanos 8:28). Paulo estava grato pela fé dos Colossenses, mas sabia que o entendimento deles estava sendo confundido com falso \"conhecimento\". Então ele orou antes de tudo para que eles tivessem o verdadeiro conhecimento, o conhecimento da vontade de Deus. E não apenas que eles conheceriam a vontade de Deus em suas mentes, mas que a viveriam em suas vidas."
+          }
+        }
+      }
+    }
+  },
+  "joao": {
+    "nivel": 4,
+    "nome_livro": "Estudos Bíblicos em Comunidade - João",
+    "licoes": {
+      "licao_1": {
+        "numero": 1,
+        "titulo": "O Evangelho de João: Venham e verão",
+        "referencia_geral": "João 1",
+        "conteudo_integral": {
+          "introducao": "Conhecemos as pessoas ao passar tempo com elas. Observamos suas ações, ouvimos suas palavras e notamos como elas tratam os outros. Com o tempo, percebemos quem são de verdade. João passou cerca de três anos com Jesus e, ao escrever esse relato detalhado da vida de Jesus, ele nos deu a oportunidade de decidir por nós mesmos quem é Jesus e que diferença ele faz em nossas vidas. João já tinha decidido. Ele creu que Jesus era o Criador, o Filho de Deus e Deus em carne enviado para redimir o mundo (veja João 1:3, 14; 3:16). Jesus havia transformado a vida de João e é o que o Evangelho de João nos chama, para essa mesma transformação. Este livro nos permite ver o que João viu, sentir o que ele sentiu e acreditar no que ele acreditava.",
+          "quem_era_joao": "João conhecia Jesus, e o mais importante: Jesus conhecia João. João se referiu a si mesmo como o discípulo que Jesus amava. João é uma das figuras mais importantes do Novo Testamento. Os quatro Evangelhos e Atos o mencionam constantemente. Além do livro de João que estamos estudando, o Novo Testamento tem três cartas escritas por João: 1, 2 e 3 João. O livro final da Bíblia, Apocalipse, também nomeia João como o autor. Antes de conhecer Jesus, João era pescador. Ele e seu irmão mais velho, Tiago, pescavam no mar da Galiléia ao lado de seu pai, Zebedeu. João foi um dos pescadores que Jesus chamou de se tornar \"pescadores de homens\" (Mateus 1:17). De acordo com a tradição da igreja, João era o mais novo dos 12 discipulos de Jesus e o que viveu mais tempo, possivelmente até os 90 anos de idade. Nesse caso, João tinha muitos anos para refletir sobre o que havia aprendido de Jesus. Como todos nós, João precisava das mudanças de vida que acontecem ao conhecer Jesus. Quando João era jovem, ele tinha uma atitude típica de imaturidade. A certa altura, João e Tiago pediram que Jesus concedesse a eles qualquer coisa que pedirem. Parece que esses irmãos estavam acostumados a conquistar seus desejos. Nesse caso, eles queriam os lugares de maior destaque, um à esquerda e um à direita de Jesus depois que ele ascender ao céu (veja Marcos 10:35-37). Jesus indicou a personalidade desses irmãos quando os apelidou de \"Filhos do Trovão\" (veja Marcos 3:17). Esses \"Filhos do Trovão\", precisavam aprender a serem humildes e a amar ao próximo mais que a si mesmos. Quando os samaritanos resistiram a Jesus (veja Lucas 9:51-56), João e Tiago perguntaram se Ele queria que eles chamassem fogo do céu para destruí-los. Sua solução impulsiva para a tensão foi aniquilar as pessoas na vila samaritana. Mas com o tempo, João aprendeu com Jesus e as suas atitudes mudaram. Em 1 João, ele escreveu: \"Amados, amemo-nos uns aos outros, pois o amor procede de Deus. Aquele que ama é nascido de Deus e conhece a Deus\" (1 João 4:7). Claramente, a vida e os ensinamentos de Jesus haviam transformado João. Ele não era um seguidor perfeito, mas sabia que não importava quantas vezes suas atitudes fossem egocêntricas, Jesus não desistiria dele. Jesus presistentemente demonstrou graça, amor e verdade a João e aos outros discípulos - e são essas mensagens que João e os outros mais tarde entregaram ao mundo. Após a morte e ressurreição de Cristo, João se tornou um forte testemunho. Quando os líderes religiosos judeus orderam que Pedro e João parassem de falar sobre Jesus, eles responderam: \"Julguem os senhores mesmos se é justo aos olhos de Deus obedecer aos senhores e não a Deus. Pois não podemos deixar de falar do que vimos e ouvimos\" (Atos 4:19-20). A coragem de João marcou sua vida e ministério. Pense no poder em estar com Jesus. Ninguém que encontra Jesus permanece o mesmo. Ou você se aproximará dEle ou se afastará dEle. João passou tempo com Jesus, e foi atraído por Ele. Suas atitudes mudaram e sua vida mudou. Ao estudar a vida de Jesus, observe como seu coração muda. Procure conhecê-Lo melhor. Aproxime-se dEle e deixe-O transformar sua vida também.",
+          "antecedentes_historicos": "João provavelmente escreveu seu evangelho entre 70 e 100 dC.; várias décadas depois da morte e ressurreição de Cristo. No entanto, a situação cultural e política das regiões onde Jesus havia ministrado era tão complexa quanto quando Ele estava na terra. Os três principais fatores que influenciaram as pessoas nesta região no final do primeiro século foram: Primeiro, a ocupação romana. O exército romano era a força militar mais poderosa que o mundo já viu. Mantinham a ordem com intimidação e violência. Ou as pessoas se submetiam ao imperador ou eram executadas, muitas vezes por crucificação. Segundo, a filosofia grega permeava as mentes da maioria dos cidadãos do império. Uma dessas crenças, o dualismo platônico, sustentava que o fisico e o espiritual eram distintos um do outro. Dessa filosofia surgiu a seguinte ideia: um Deus perfeito não poderia estar envolvido com esse mundo imperfeito. O próprio esforço espiritual era a única esperança da época para as pessoas que desejavam transcender o mal do mundo e encontrar Deus. Terceiro, o monoteísmo judeu ainda era proeminente na Galiléia e na Judéia. Os judeus adoravam um Deus, o Senhor, que os libertara da escravidão egípcia e do cativeiro babilônico. Cativos mais uma vez, aos romanos, os judeus novamente esperaram pelo resgate de Deus através do Messias predito por Isaías e os outros profetas (veja Isaías 61:1-4). Em 70 dC, os romanos destruíram o templo judaico em Jerusalém. Antes disso, no tempo de Jesus, os judeus adoravam a Deus naquele templo e faziam sacrificios lá. Eles acreditavam que a única maneira de receber o perdão dos pecados era com o sangue dos sacrificios de animais e a obediência à lei ganhava o favor de Deus. O ministério de Jesus ocorreu no contexto dessa mistura de ideias políticas, filosóficas, econômicas, sociais e religiosas. João escreveu seu Evangelho para oferecer esperança de que havia outra maneira de se viver. Esta maneira, não se baseava na separação de Deus com o mundo criado e dos seres humanos e não era necessário intenso esforço espiritual para tentar apaziguar a Deus dos humanos. A boa nova do Evangelho de João é o seguinte: o próprio Deus havia entrado na história humana. Jesus, Filho de Deus e Filho do Homem, totalmente Deus e totalmente homem, veio redimir a humanidade. Pense em como o Evangelho de João é relevante para nós hoje. Nós também vivemos em um tempo de visões concorrentes. As pessoas buscam esperança e força através de várias filosofias e sistemas religiosos. Algumas dessas visões de mundo desconsideram, menosprezam ou até ficam contra Jesus. Mas Jesus disse \"Eu sou o caminho, a verdade e a vida\" (João 14:6). Ele satisfaz os anseios que ninguém e nenhuma coisa pode. Mesmo que os outros não entendam, mesmo que zombem ou nos persigam, este livro mostra que seguir Jesus é o único caminho para a vida eterna - e assim vale a pena o custo.",
+          "o_convite_e_objetivo_de_joao": "João apresentou uma nova maneira de ver o mundo que muitos judeus e gentios teríam em comum. Jesus foi a nova maneira. Jesus havia convidado João e seus amigos a \"virem e verem\" (João 1:39). João respondeu e iniciou um relacionamento profundo e transformador com Jesus. Então, através de seu Evangelho, João fez o mesmo convite a qualquer pessoa que intencionalmente e honestamente considere o que Jesus tem para oferecer. Jesus deu a melhor explicação: \"Porque Deus tanto amou o mundo que deu o seu Filho Unigênito, para que todo o que nele crer não pereça, mas tenha a vida eterna\" (3:16). O propósito do Evangelho de João é contar a todos a boa nova que Jesus havia compartilhado (veja João 5:24). João não tinha como objetivo dar todos os detalhes da vida de Jesus ou recontar cada uma das palavras e milagres. De fato, perto do final de seu Evangelho, João disse: \"Jesus realizou na presença dos seus discípulos muitos outros sinais miraculosos, que não estão registrados neste livro. Mas estes foram escritos para que vocês creiam que Jesus é o Cristo, o Filho de Deus e, crendo, tenham vida em seu nome.\" (João 20:30-31). E em João 21:25, ele afirmou que todos os livros do mundo não podiam conter tudo o que Jesus havia dito e feito durante Seu breve período na Terra. Ao invés disso, o Espírito Santo fez com que João registrasse apenas os detalhes que levariam um mundo faminto a crer em Jesus, \"o pão da vida\" (João 6:35; veja também 2 Pedro 1:21).",
+          "personalize_a_verdade": "João teve o privilégio de viver ao lado de Jesus. Você não teve a oportunidade de passar um tempo com Jesus como humano na Terra - mas terá muitos meses para conhecê-Lo melhor ao participar deste estudo. O que você já sabe sobre Jesus? Onde você ouviu falar dEle pela primeira vez? Que perguntas você tem sobre Ele? Converse com Ele sobre suas perguntas e mantenha seus olhos e coração abertos para saber como Ele se revelará a você."
+        },
+        "dias": {}
+      },
+      "licao_2": {
+        "numero": 2,
+        "titulo": "Jesus a Palavra",
+        "referencia_geral": "João 1:1-5",
+        "memorize_a_verdade": "No princípio era aquele que é a Palavra. Ele estava com Deus, e era Deus. João 1:1",
+        "dias": {
+          "dia_1": {
+            "referencia": "João 1:1-2",
+            "tema": "A Palavra de Deus",
+            "perguntas": [
+              "1. Faça uma lista de tudo que estes dois versículos revelam sobre a pessoa que João chamou de \"a Palavra\".",
+              "2. Que mais Apocalipse 19:11-16 revela sobre a Palavra?",
+              "3. João não identificou \"a Palavra\" nesses dois primeiros versículos. Leia João 1:3-5 e 1:14-18. Qual é o nome da \"Palavra\"?"
+            ]
+          },
+          "dia_2": {
+            "referencia": "João 1:1-3",
+            "tema": "A Palavra durante a criação",
+            "perguntas": [
+              "4. Leia os versículos de hoje e o de Gênesis 1:1-2. Como essas duas passagens são parecidas e por que isso é importante?",
+              "5. Como as seguintes passagens o ajudam a entender melhor a passagem de hoje? a. Hebreus 1:1-3 b. Colossenses 1:15-16",
+              "6. Muitas pessoas não acreditam que Deus criou o mundo. Por que é importante que Deus fez tudo?",
+              "7. Com base no que você estudou hoje, por que é importante saber que a Palavra é co-criadora do universo e não apenas um ser criado?"
+            ]
+          },
+          "dia_3": {
+            "referencia": "João 1:4",
+            "tema": "A Palavra é a vida",
+            "perguntas": [
+              "8. João disse que nEle (a Palavra, Jesus) era a vida. Como os seguintes versículos o ajudam a entender o tipo de \"vida\" sobre a qual João se referiu? a. João 6:35 b. João 11:25-26 c. João 14:6",
+              "9. Jesus é o autor da vida. Leia João 10:10 e Gênesis 2:7. Quais tipos de vida Jesus oferece? Como são diferentes?",
+              "10. Como saber que Jesus oferece a vida fisica e espiritual pode ajudá-lo em tempos dificeis? Escreve sobre sua própria experiência, se for possível."
+            ]
+          },
+          "dia_4": {
+            "referencia": "João 1:4-5",
+            "tema": "A Palavra é a luz",
+            "perguntas": [
+              "11. João disse que a vida estava na Palavra e que esta vida \"era a luz dos homens\". Como a vida e a luz estão conectadas no sentido fisico?",
+              "12. Leia João 8:12 e Salmos 27:1. Como a vida e a luz estão conectadas espiritualmente?",
+              "13. Que dicas Atos 26:18 e 1 Coríntios 4:5 revelam sobre o que João queria dizer sobre as trevas?",
+              "14. Onde você vê a luz de Deus brilhando nas trevas hoje?"
+            ]
+          },
+          "dia_5": {
+            "referencia": "João 1:1-5; 1 João 1:1-7",
+            "tema": "A Palavra é pessoal",
+            "perguntas": [
+              "15. Como as passagens de hoje são similares? Faça uma lista das similaridades, citando os versículos específicos.",
+              "16. Em 1 João, o apóstolo João escreveu sobre como foi conhecer a Palavra pessoalmente. Leia Lucas 24:36-43 e 2 Pedro 1:16-18. a. Como João e os outros apóstolos viram que Jesus era uma pessoa verdadeira? b. Se você fosse João, qual dessas maneiras seriam mais importantes para você? Por quê?",
+              "17. Segundo João 20:30-31 e 1 João 1:3-4, por que João incluiu seu próprio testemunho no Evangelho e a carta que ele escreveu?"
+            ]
+          },
+          "dia_6": {
+            "referencia": "Encontro",
+            "tema": "Participe do Grupo",
+            "perguntas": []
+          }
+        },
+        "devocionais_e_comentarios": {
+          "aprenda_a_verdade": "Jesus Cristo é Deus e Ele fez todas as coisas. Para você, por que esses fatos são importantes? Como isso afeta a maneira como você se vê e ver aos outros? Lembre-se dessas coisas ao conversar e passar tempo com outras pessoas nesta semana. Que diferenças você percebeu? Se prepare para apresentar sua resposta ao grupo.",
+          "pratique_a_verdade": "Você quer mais da vida e da luz de Jesus? Nesse caso, escreva uma oração convidando-O a fazer isso em sua vida. Se prepare para falar sobre isso em seu pequeno grupo.",
+          "comentario_integral": {
+            "a_palavra_e_deus": "As pessoas sempre se perguntaram como o mundo e a vida humana surgiram. João abordou essa questão nos primeiros versículos de seu Evangelho. A Palavra estava presente no princípio. Gênesis, o primeiro livro das escrituras hebraicas, inicia afirmando que Deus começou tudo. Ele criou os céus e a terra no começo dos tempos (veja Gênesis 1:1). As três primeiras palavras do Evangelho de João ecoam a introdução de Gênesis: no principio. Os leitores judeus do livro de João conhecia essa frase. Eles sabiam que João estava prestes a lhes contar algo sobre Deus, o Criador do universo. Mas João não disse: \"No princípio, Deus criou\", como em Gênesis. Ao invés disso, João disse: \"No princípio era aquele que é a Palavra\". A palavra grega traduzida como \"Palavra\" é logos. Quando Deus revelou a Si mesmo e Sua vontade aos seres humanos, Ele fez através de Sua Palavra, Seu \"logos\". João 1:17, identifica essa Palavra ou logos como Jesus Cristo. O povo judeu entendeu que a palavra logos queria dizer a mensagem de Deus para eles. É a revelação de Sua vontade para Seu povo. O dualismo grego afirma que os mundos físico e espiritual são separados e incompatíveis. O termo logos também está usado no dualismo. Para eles, o logos foi a ponte entre um Deus transcendente e o universo fisico; o princípio divino que manteve o universo unido. Portanto, tanto os judeus quanto os gregos teriam notado as declarações na introdução do Evangelho de João, que se centralizavam nessa palavra. Gênesis 1 e João 1 contam como Deus criou o mundo. A versão de João ajuda a explicar um mistério da narrativa de Gênesis. A palavra usada para se referir a \"Deus\" em Gênesis 1:1 é Elohim, um substantivo no plural. Mas a palavra para \"criado\" é singular. Isso é curioso, uma vez que o Deus do Antigo Testamento é monoteista. De fato, a mais famosa oração hebraica, o Shemá, vem de Deuteronômio 6: 4, \"Ouve, ó Israel: 0 SENHOR, nosso Deus, é o único Senhor.\" Contudo, ao descrever a criação do mundo, o escritor de Gênesis usou um substantivo plural para o nome de Deus. Os três primeiros versículos de João 1 nos dá pistas sobre esse mistério. Deus não estava sozinho quando criou o mundo. Deus já existia por toda a eternidade. Ele não foi criado, mas criou todas as coisas. Mesmo assim, Deus não estava sozinho; \"A Palavra\" o acompanhou. João disse duas coisas importantes sobre a Palavra. Primeiro, \"a Palavra estava com Deus\". João disse que a Palavra estava com Deus antes da criação do universo. Com essa declaração João afirmou que a Palavra é atemporal, eterna, assim como Deus. Essa afirmação também transmite a ideia de relacionamento. A Palavra e Deus, dois seres separados, já tinham um relacionamento por toda a eternidade. Segundo, \"a Palavra era Deus\". João afirmou que a Palavra estava com Deus, mas também afirmou que são a mesma pessoa. João estava colocando a fundação da doutrina da Trindade. O único Deus verdadeiro sempre existiu e sempre existirá. Ele existe em três pessoas distintas que sempre viveram e se relacionaram juntas. As três Pessoas são as seguintes: Deus Pai, Deus Filho e Deus Espírito Santo. Sem dúvida, essa doutrina é difícil de entender mas é mencionada repetidamente nas Escrituras (por exemplo, veja Mateus 28:19; 2 Coríntios 13:14; 1 Pedro 1:1-2; 1 João 5:20). A Palavra é uma pessoa. Ao dizer que a Palavra era Deus, João deu um grande passo adiante. A Palavra não é um conceito abstrato - é uma pessoa. O logos não é uma força impessoal como o dualismo ensinava. Não, a Palavra é uma pessoa, e essa pessoa é Deus. João sabia que afirmar ser Deus era blasfemia. Insultar Deus de qualquer maneira era considerado um crime punível com a morte. Assim, antes de afirmar tão enfaticamente que essa Palavra - uma pessoa - era Deus, João precisava ter evidências esmagadoras. E isso era o propósito de João para escrever seu Evangelho. João queria que o mundo soubesse quem é a Palavra e dar evidências que os convencessem. A Palavra é Jesus, que veio à Terra como um ser humano. João havia caminhado lado a lado com Ele. Ao escrever as palavras e ações de Jesus, João apresentou uma prova de que Jesus não era apenas um profeta, nem um homem bom. Ele era Deus em carne, como João 1:14 afirma claramente. Pense no seguinte: A Palavra era Deus. Se queremos conhecer a Deus, devemos olhar para a pessoa de Jesus - a Palavra. Ao conhecer Jesus através do livro de João, começamos a ter uma imagem do caráter de Deus, Sua vontade para nós e Seu grande amor. Não precisamos nos perguntar quem é Deus. Ele já se revelou a nós em Jesus e nos revelou Jesus nas Escrituras. Ele quer que O conheçamos!",
+            "a_palavra_e_o_criador": "A Palavra estava com Deus no princípio mas Ele também estava fazendo o trabalho criativo de Deus. Deus criou tudo através da Palavra, Jesus Cristo. Essa segunda pessoa da Trindade, Deus o Filho, foi quem criou todo o mundo. Colossenses 1:16 confirma que, \"pois nele foram criadas todas as coisas nos céus e na terra, as visíveis e as invisíveis, sejam tronos ou soberanias, poderes ou autoridades; todas as coisas foram criadas por ele e para ele\". (Veja também Hebreus 1:2). Jesus é a Palavra que criou todas as coisas. Tudo o que vemos criado no mundo existe por causa dEle. Pense na seguinte afirmação de João: a Palavra é o Criador. Deus criou o mundo e tudo nele. Toda pessoa que já viveu ou que viverá foi criada por Deus através de Jesus Cristo. Cada um de nós existe por causa de Jesus. Não estaríamos vivos se não fosse por Ele. Isso é verdade, quer reconheçamos ou não.",
+            "a_palavra_e_a_vida_e_luz": "Antes de revelar que ele estava escrevendo sobre Jesus em 1:17, João escreveu mais sobre a Palavra. O versículo 4 descreve a Palavra como a vida e luz. Para os leitores judeus, essas palavras seriam paralelas com o Gênesis 1. Um dos primeiros atos da criação foi trazer luz ao mundo. O ato final no Gênesis 1 foi a criação da vida humana. Jesus é a vida. A palavra \"vida\" aparece 48 vezes no Evangelho de João. Muitas vezes Jesus estava se referindo a Si mesmo. Por exemplo, Ele se identificou como \"o pão da vida\"; \"A ressurreição e a vida\"; e \"o caminho, a verdade e a vida\" (6:35; 11:25; 14:6). E João descreveu o tipo de vida que Jesus deseja para nós: \"eu vim para que tenham vida, e a tenham em abundância\" (10:10). O Evangelho de João conta como Deus dá essa vida e como podemos recebê-la. Jesus é a luz. O segundo tema em João 1:4 é a luz. A Palavra \"era a luz dos homens\". O termo \"homens\" refere-se a toda a humanidade. João afirmou que a Palavra havia chegado para todo homem, mulher e criança. Ele não veio apenas para pessoas de uma etnia, classe, nível educacional ou formação religiosa específica. No início do capítulo João escreveu sobre a realidade física - estamos aqui porque a Palavra nos criou. Agora, ao introduzir a ideia da luz, ele se voltou para a realidade espiritual. Os judeus estavam familiarizados com a ideia de Deus como a luz. O salmista havia orado: \"Faze, ó Senhor, resplandecer sobre nós a luz do teu rosto!\" (Salmos 4:6). Deus criou a luz física na terra e depois usou o conceito da luz para descrever a Si mesmo. Jesus veio para iluminar nas trevas do pecado da humanidade e guiar as pessoas para Sua vida abundante. Essa luz ainda está levando as pessoas à vida. A frase final da introdução de João diz que \"A luz brilha nas trevas, e as trevas não a derrotaram\". Quem anda nas trevas não pode apagar nem entender a luz. A Palavra chegou, trazendo luz para as trevas do mundo. Quando eles se enfrentam, a luz sempre extingue a escuridão."
+          }
+        }
+      }
+    }
+  }
+}
