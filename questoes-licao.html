@@ -163,7 +163,7 @@
         </section>
     </main>
 
-    <footer
+    <!-- <footer
         class="fixed bottom-0 left-0 w-full bg-surface/90 backdrop-blur-md border-t border-outline-variant px-margin-mobile py-6 z-50">
         <div class="max-w-[1100px] mx-auto flex gap-4">
             <button
@@ -179,7 +179,7 @@
                 <span class="material-symbols-outlined">chevron_right</span>
             </button>
         </div>
-    </footer>
+    </footer> -->
 
     <script>
         function openSummaryModal() {
@@ -382,59 +382,64 @@
         }
 
         function construirResumoNoModal() {
-            const licao = estudos[livroAtual].licoes[licaoAtual];
+    const licao = estudos[livroAtual].licoes[licaoAtual];
 
-            document.getElementById('modal-titulo-geral').innerText = "Resumo da Lição";
-            document.getElementById('modal-subtitulo-geral').innerText = `${estudos[livroAtual].nome_livro.replace('Estudos Bíblicos em Comunidade - ', '')} Lição ${licao.numero}: ${licao.titulo}`;
+    document.getElementById('modal-titulo-geral').innerText = "Resumo da Lição";
+    document.getElementById('modal-subtitulo-geral').innerText = `${estudos[livroAtual].nome_livro.replace('Estudos Bíblicos em Comunidade - ', '')} Lição ${licao.numero}: ${licao.titulo}`;
 
-            const containerListaResumo = document.getElementById('modal-lista-resumo');
-            containerListaResumo.innerHTML = '';
+    const containerListaResumo = document.getElementById('modal-lista-resumo');
+    containerListaResumo.innerHTML = '';
 
-            for (let d = 1; d <= 5; d++) {
-                const chaveDia = `dia_${d}`;
-                const dadosDia = licao.dias[chaveDia];
+    for (let d = 1; d <= 5; d++) {
+        const chaveDia = `dia_${d}`;
+        const dadosDia = licao.dias[chaveDia];
 
-                if (!dadosDia || !dadosDia.perguntas) continue;
+        if (!dadosDia || !dadosDia.perguntas) continue;
 
-                const sectionDia = document.createElement('section');
+        const sectionDia = document.createElement('section');
+        sectionDia.className = "mb-6"; // Adicionado um espaçamento entre os dias
 
-                const rotuloDia = document.createElement('h3');
-                rotuloDia.className = "px-4 mb-2 font-label-lg text-label-lg text-on-surface-variant uppercase tracking-wider text-xs font-bold";
-                rotuloDia.innerText = `DIA ${d}`;
-                sectionDia.appendChild(rotuloDia);
+        const rotuloDia = document.createElement('h3');
+        rotuloDia.className = "px-4 mb-2 font-label-lg text-label-lg text-on-surface-variant uppercase tracking-wider text-xs font-bold";
+        rotuloDia.innerText = `DIA ${d}`;
+        sectionDia.appendChild(rotuloDia);
 
-                const cardBranco = document.createElement('div');
-                cardBranco.className = "bg-white rounded-xl overflow-hidden shadow-sm border border-outline-variant/30";
+        const cardBranco = document.createElement('div');
+        cardBranco.className = "bg-white rounded-xl overflow-hidden shadow-sm border border-outline-variant/30";
 
-                let htmlInternoDoCard = '';
+        let htmlInternoDoCard = '';
 
-                dadosDia.perguntas.forEach((perguntaTexto, index) => {
-                    const numeroQuestao = index + 1;
-                    const chaveStorage = `${livroAtual}_${licaoAtual}_dia_${d}_q${numeroQuestao}`;
+        dadosDia.perguntas.forEach((perguntaTexto, index) => {
+            // CORREÇÃO AQUI: Extrai o número real da questão no início do texto (ex: "4. Leia..." extrai 4)
+            const matchNumero = perguntaTexto.match(/^(\d+)\./);
+            const numeroQuestao = matchNumero ? matchNumero[1] : (index + 1);
 
-                    const respostaUsuario = localStorage.getItem(chaveStorage);
+            // Monta a chave idêntica a como foi salva no localStorage por componente de input
+            const chaveStorage = `${livroAtual}_${licaoAtual}_dia_${d}_q${numeroQuestao}`;
 
-                    const temResposta = respostaUsuario && respostaUsuario.length > 0;
-                    const textoExibicaoResposta = temResposta ? respostaUsuario : "Nenhuma anotação feita";
-                    const classeEstiloResposta = temResposta ? "font-label-lg text-label-lg text-on-surface" : "font-label-lg text-label-lg text-outline italic";
+            const respostaUsuario = localStorage.getItem(chaveStorage);
 
-                    if (index > 0) {
-                        htmlInternoDoCard += `<div class="h-[1px] bg-[#F2F2F7] ml-5"></div>`;
-                    }
+            const temResposta = respostaUsuario && respostaUsuario.trim().length > 0;
+            const textoExibicaoResposta = temResposta ? respostaUsuario : "Nenhuma anotação feita";
+            const classeEstiloResposta = temResposta ? "font-label-lg text-label-lg text-on-surface text-[14px]" : "font-label-lg text-label-lg text-outline italic text-[14px]";
 
-                    htmlInternoDoCard += `
-                        <div class="p-5">
-                            <p class="text-[14px] font-semibold text-on-surface-variant mb-1">${perguntaTexto}</p>
-                            <p class="${classeEstiloResposta}">${textoExibicaoResposta}</p>
-                        </div>
-                    `;
-                });
-
-                cardBranco.innerHTML = htmlInternoDoCard;
-                sectionDia.appendChild(cardBranco);
-                containerListaResumo.appendChild(sectionDia);
+            if (index > 0) {
+                htmlInternoDoCard += `<div class="h-[1px] bg-[#F2F2F7] ml-5"></div>`;
             }
-        }
+
+            htmlInternoDoCard += `
+                <div class="p-5">
+                    <p class="text-[14px] font-semibold text-on-surface-variant mb-1">${perguntaTexto}</p>
+                    <p class="${classeEstiloResposta}">${textoExibicaoResposta}</p>
+                </div>
+            `;
+        });
+
+        cardBranco.innerHTML = htmlInternoDoCard;
+        sectionDia.appendChild(cardBranco);
+        containerListaResumo.appendChild(sectionDia);
+    }
+}
 
         function compartilharRespostas() {
             const licao = estudos[livroAtual].licoes[licaoAtual];
